@@ -1,108 +1,239 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Non-dairy Godmother Tea Rooms: 
 
-Welcome Martina Martin,
+This website is designed for a fictional vegan restaurant based in Cork, Ireland. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+This website has been created as the Fourth Milestone project for Code Institute's Full Stack Software Development Diploma. It was built using a Full-Stack Toolkit. GitPod was used for writing the code for this website, as well as committing and pushing to GitHub. GitHub was then used to store the project after it had been pushed from GitPod. Once all the code had been written, Heroku was then used to deploy the website. 
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+![Am I Responsive]()
 
-## Gitpod Reminders
+### View the live website [here]()
+***
+## Table of content: 
+ 1. [Site Goals](#Site-Goals)
+ 1. [UX](#UX)
+      1. [User Stories](#User-Stories)
+      1. [Development Planes](#Development-Planes)
+            * [Strategy](#Strategy)
+            * [Scope](#Scope)
+            * [Structure](#Structure)
+            * [Skeleton](#Skeleton)
+            * [Surface](#Surface)
+      1. [Color](#Color)
+      1. [Font](#Font)
+      1. [Images](#Images)
+ 1. [Features](#Features)
+ 1. [Testing](#Testing)
+ 1. [User Stories Met](#User-Stories-Met)
+ 1. [Bugs](#Bugs)
+ 1. [Technologies Used](#Technologies-Used)
+ 1. [Validation](#Validation)
+ 1. [Accessibility](#Accessibility)
+ 1. [Deployment](#Deployment)
+ 1. [Credits](#Credits)
+ 1. [Acknowledgments](#Acknowledgements)
+***
+  
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Site Goals:
 
-`python3 -m http.server`
+The goals for this site are as follows:
+* 
 
-A blue button should appear to click: _Make Public_,
+## UX:
 
-Another blue button should appear to click: _Open Browser_.
+### User stories:
+#### New User:  
+*  
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+#### Returning User:
+* 
 
-A blue button should appear to click: _Make Public_,
+## Development Planes:
+To create a website that is comprehensive and informative for a user, as a developer you need to look at all aspects of the website and how someone who visits your website will use it. You have to consider all the user stories that have been outlined in the above sections.  
 
-Another blue button should appear to click: _Open Browser_.
+## Strategy
+The strategy principal looks at user needs, as well product/service objectives. This websites target audience was broken down into three categories:
+### Roles: 
+* New User
+* Existing User  
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Demographic:
+* 
 
-To log into the Heroku toolbelt CLI:
+### Psychographic:
+#### Lifestyle:
+*  
+#### Values:
+*  
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+#### The website needs to allow users to:  
+*   
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
-------
+#### The website needs to allow the restaurant owner to:  
+*   
 
-## Release History
+## Scope:  
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+With the structure in place, it was then time to move onto the scope plane. This was all about developing website requirements based on the goals set out in the strategy plane. These requirements are broken down into two categories. 
+### Content Requirements:
+1. The user will be looking for:
+      * 
+### Functionality Requirements:
+1. The user will be able to:
+      * 
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+## Structure:
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+The information above was then used to create a structure for the website. Below is a site map showing how users can navigate the website intuitively 
+<details>
+<summary>Sitemap</summary>
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+![Sitemap]()
+</details>
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+## Skeleton:
+[Wireframes]( "Link to Wireframe screenshots") were created to set out the initial appearance of the website while also making sure to keep the end-user in mind at all times. Wireframes were created using [Balsamiq]().  
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+## Surface:
+[Please see the live site here]()  
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Color: 
+To create a visually appealing website but also a website that was easy for people to read I used several different sites to test color contrast. I wanted to make sure the color scheme was not only eye-catching but also that it passed the LightHouse Accessibility test. 
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+Initially, I looked at what colors work best with the green color I had chosen as my main color. I did this by using a color wheel.  
+![Color Wheel]()
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+Following on from the color wheel, an orange was decided upon to contrast the green. To make sure text could be seen without issue on my chosen colors I used [Coolors]() color contrast checker.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+![Color Checker 1]()
+![Color Checker 2]()
 
-------
 
-## FAQ about the uptime script
 
-**Why have you added this script?**
+### Font:
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+ 
 
-**How will this affect me?**
+### Images:
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+A lot of the imagery on this site was sourced from [Pexel](https://www.pexels.com/) with some real-life images too.  
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+***
+[Back to top](#Non-dairy-Godmother-Tea-Rooms)  
+  
 
-**So….?**
+## Features:
+There are several features on this site to help users get the most out of their visit to the site.  
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+### General:
+#### Header and Navigation:  
 
-**Can I opt out?**
+![Header and Nav bar]()  
+#### Footer:  
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+![Social Media Icons]()
+### Home page:
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
 
-**Anything more?**
+## Future Features:
+* 
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+***
+[Back to top](##Non-dairy-Godmother-Tea-Rooms)  
 
----
+## User Stories Met:
+This section is to look back at the User stories we established during the strategy phase of the project. 
+We are looking to see if we have met all the goals we set out. 
+#### New User:  
+* 
 
-Happy coding!
+***
+
+## Testing:
+Testing information can be viewed [here]( "Link to testing information")
+
+***
+
+## Bugs:
+1. 
+
+***
+[Back to top](#Non-dairy-Godmother-Tea-Rooms) 
+
+## Technologies Used:
+For the purpose of this project, the following technologies were used.  
+
+### Languages:
+* HTML
+* CSS
+* Javascript
+* Python 
+* Django
+* Postgres
+
+### Frameworks, Libraries, Programs & Applications Used:
+
+#### Google Font
+
+#### Font Awesome
+* Font Awesome was used on each page of the website to provide icons for UX purposes.  
+
+#### GitPod
+* GitPod was used for writing all the code for this project. It was also used to commit and push to GitHub.  
+
+#### GitHub 
+* GitHub was used to store this project.
+
+#### Heroku
+* Heroku was used to deploy the project.
+
+#### Balsamiq 
+* Balsamiq was used to draw initial Wireframes for this project.
+
+#### Figma
+* Figma was used during the structure phase of this project. It was used to create a sitemap of the website. 
+
+#### Am I Responsive
+* Am I Responsive was used to check that each page of the site was responsive. It was also used to create the mock-up image seen at the beginning of this document. 
+
+#### Google Development Tools
+* Google Dev Tools was used to edit code and check responsiveness before making the changes permanent.
+
+*** 
+[Back to top](#Non-dairy-Godmother-Tea-Rooms)
+
+## Validation:
+
+See screenshot to W3C validator and Jigsaw CSS validator [here]( "Link to validation screenshots")
+
+### **Index.html:**
+No errors found. 
+
+### **Style.css:**
+No errors found
+
+***
+[Back to top](#Non-dairy-Godmother-Tea-Rooms)
+
+## Accessibility:
+![LightHouse Report]()
+***
+## Deployment:
+
+***
+## Credits:
+* 
+
+
+## Acknowledgements:
+* I would like to thank Brian O’Hare for being my mentor for this project.
+
+*** 
+[Back to top](#Non-dairy-Godmother-Tea-Rooms) 

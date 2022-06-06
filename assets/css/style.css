@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+
+
+header {
+    margin: 0;
+}
+
+/* Header */
+
+
+/* Navigation bar */
+.nav-item .nav-link {
+    font-family: Lora, sans-serif;
+    font-size: large;
+    color: #32863A;
+
+}
+
+.nav-pill {
+    color: #32863A;
+}
+
+/* Main area on home page */
+
+#hero-outer {
+    height: 600px;
+    width: 100%;
+    overflow: hidden; 
+
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#cover-text, #cover-text h2 {
+    color: #32863A
+}
+
+#hero-image {
+    height: 600px;
+    width: 100%;
+    background: url('../images/pizza_image.jpg') no-repeat center center;
+    
+
+
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hero-zoom {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+
+#cover-text {
+    font-size: 130%;
+    font-family: Lora, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+    width: 600px;
+    height: 200px;
+
+    padding-top: 40px;
+    padding-left: 10px;
+
+    background-color:rgb(	50	134	58)
+
+    bottom: 30px;
+    right: 150px;
+
+    position: absolute
+}
+
+/* Footer */
+
+.fa{
+    color: #32863A;
+    font-size: large;
+    padding: auto;
+}

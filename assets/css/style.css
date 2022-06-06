@@ -1,12 +1,11 @@
+/* Imported Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
+/* Header */
 
 header {
     margin: 0;
 }
-
-/* Header */
-
 
 /* Navigation bar */
 .nav-item .nav-link {
@@ -32,50 +31,58 @@ header {
     margin-bottom: 20px;
 }
 
-#cover-text, #cover-text h2 {
-    color: #32863A
-}
-
 #hero-image {
     height: 600px;
     width: 100%;
-    background: url('../images/pizza_image.jpg') no-repeat center center;
+    background: url('../images/pizza_image_min.jpg') center;
     
 
 
     animation-name: hero-zoom;
     animation-duration: 5s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: backwards;
 }
 
 @keyframes hero-zoom {
     from{
-        transform: scale(1);
+        transform: scale(1.5);
     }
     to{
-        transform: scale(1.1);
+        transform: scale(1);
     }
 }
 
 #cover-text {
-    font-size: 130%;
+    font-size: 150%;
     font-family: Lora, sans-serif;
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 5px;
 
-    width: 600px;
-    height: 200px;
+    width: 950px;
+    height: 160px;
 
     padding-top: 40px;
     padding-left: 10px;
+    background-color: rgba(50, 134, 58, .7);
 
-    background-color:rgb(	50	134	58)
-
-    bottom: 30px;
-    right: 150px;
+    bottom: 325px;
+    right: 500px;
 
     position: absolute
 }
+
+#cover-text, #cover-text h3 {
+    font-size: medium;
+    color: antiquewhite;
+    font-style: oblique;
+    text-align: center;
+}
+
+.fa-regular {
+    font-size: x-large;
+    color: antiquewhite;
+}
+
 
 /* Footer */
 

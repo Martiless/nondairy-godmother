@@ -23,6 +23,7 @@ header {
 
 /* Main area on home page */
 
+
 #hero-outer {
     height: 600px;
     width: 100%;
@@ -73,6 +74,11 @@ header {
     position: absolute
 }
 
+#cover-text, #cover-text h2 {
+    line-height: normal;
+}
+
+
 #cover-text, #cover-text h3 {
     font-size: medium;
     color: #FFFFFF;
@@ -98,7 +104,6 @@ header {
 .box {
     opacity: .5;
 }
-
 
 #menus {
     height: 600px;

@@ -87,6 +87,19 @@ header {
 
 /* Menu page */
 
+
+.background-image {
+    background-image: url('../images/main_image_min.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.box {
+    opacity: .5;
+}
+
+
 #menus {
     height: 600px;
 }
@@ -150,7 +163,7 @@ hr {
     height: 300px;
     padding: 30px;
     border-style: solid;
-    border-color: #32863A;
+    border-color: #ffffff;
     background-color: rgba(50, 134, 58, .7);
     border-width: 1px;
     border-radius: 50%;

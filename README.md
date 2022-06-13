@@ -1,4 +1,4 @@
-# Non-dairy Godmother Tea Rooms: 
+# Non-dairy Godmother: 
 
 This website is designed for a fictional vegan restaurant based in Cork, Ireland. 
 
@@ -126,7 +126,7 @@ A lot of the imagery on this site was sourced from [Pexel](https://www.pexels.co
 
 
 ***
-[Back to top](#Non-dairy-Godmother-Tea-Rooms)  
+[Back to top](#Non-dairy-Godmother)  
   
 
 ## Features:
@@ -146,7 +146,7 @@ There are several features on this site to help users get the most out of their 
 * 
 
 ***
-[Back to top](##Non-dairy-Godmother-Tea-Rooms)  
+[Back to top](##Non-dairy-Godmother)  
 
 ## User Stories Met:
 This section is to look back at the User stories we established during the strategy phase of the project. 
@@ -165,7 +165,7 @@ Testing information can be viewed [here]( "Link to testing information")
 1. 
 
 ***
-[Back to top](#Non-dairy-Godmother-Tea-Rooms) 
+[Back to top](#Non-dairy-Godmother) 
 
 ## Technologies Used:
 For the purpose of this project, the following technologies were used.  
@@ -176,7 +176,7 @@ For the purpose of this project, the following technologies were used.
 * Javascript
 * Python 
 * Django
-* Postgres
+* PostgreSQL
 
 ### Frameworks, Libraries, Programs & Applications Used:
 
@@ -207,7 +207,7 @@ For the purpose of this project, the following technologies were used.
 * Google Dev Tools was used to edit code and check responsiveness before making the changes permanent.
 
 *** 
-[Back to top](#Non-dairy-Godmother-Tea-Rooms)
+[Back to top](#Non-dairy-Godmother)
 
 ## Validation:
 
@@ -220,7 +220,7 @@ No errors found.
 No errors found
 
 ***
-[Back to top](#Non-dairy-Godmother-Tea-Rooms)
+[Back to top](#Non-dairy-Godmother)
 
 ## Accessibility:
 ![LightHouse Report]()
@@ -236,4 +236,4 @@ No errors found
 * I would like to thank Brian O’Hare for being my mentor for this project.
 
 *** 
-[Back to top](#Non-dairy-Godmother-Tea-Rooms) 
+[Back to top](#Non-dairy-Godmother) 

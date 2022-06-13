@@ -229,7 +229,7 @@ No errors found
 
 ***
 ## Credits:
-* 
+* Initial setup of the Django project was done following Code Institutes walkthrough project.  
 
 
 ## Acknowledgements:

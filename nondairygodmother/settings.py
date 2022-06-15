@@ -11,8 +11,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
-import os 
-# Code taken from Code Institutes walkthrough project 
+import os
+# Code taken from Code Institutes walkthrough project
 import dj_database_url
 if os.path.isfile('env.py'):
     import env
@@ -132,7 +132,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-# Code taken from Code Institutes walkthrough project 
+# Code taken from Code Institutes walkthrough project
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATICROOT = os.path.join(BASE_DIR, 'staticfiles')

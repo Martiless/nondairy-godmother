@@ -16,8 +16,11 @@ class Home(generic.DetailView):
 #    template_name = 'bookings.html'
 
 
-#class Menus(generic.DetailView):
-#    template_name = 'menus.html'
+class Menus(generic.DetailView):
+    template_name = 'menus.html'
+
+    def get(self, request):
+          return render(request, 'menus.html')
 
 
 #class Login(generic.DetailView):

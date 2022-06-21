@@ -26,17 +26,17 @@
             <div class="col-md-4">
                 <ul class="nav nav-pills">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link active bg-success text-white" href="{% url 'bookingsystem:home' %}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active bg-success text-white" href="menus.html">Menus</a>
+                        <a class="nav-link" href="{% url 'bookingsystem:menus' %}">Menus</a>
+                    </li>
+                   <!-- <li class="nav-item">
+                        <a class="nav-link" href="{% url 'bookingsystem:bookings' %}">Book a Table</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="book_a_table.html">Book a Table</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="login.html">Log In</a>
-                    </li>
+                        <a class="nav-link" href="{% url 'bookingsystem:login' %}">Log In</a>
+                    </li>-->
                 </ul>
 
 

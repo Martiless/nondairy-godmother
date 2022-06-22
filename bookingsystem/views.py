@@ -26,5 +26,11 @@ class Menus(generic.DetailView):
           return render(request, 'menus.html')
 
 
-#class Login(generic.DetailView):
-#    template_name = 'login.html'
+class Sign_in(generic.DetailView):
+
+    def login_view(self, request):
+        if request.method == "POST":
+            username = request.POST.get('username')
+            password = request.POST.get('password')
+            print(username, password)
+            return render(request, 'login.html')

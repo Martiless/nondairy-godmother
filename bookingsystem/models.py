@@ -15,12 +15,14 @@ class Booking(models.Model):
 
     def __str__(self):
         return self.name
+        
 
 
 class Table(models.Model):
+    #table_number = models.IntegerField()
     number_of_seats = models.IntegerField()
     max_pax = models.IntegerField()
     min_pax = models.IntegerField()
 
     def __str__(self):
-        return self.number_of_seats
+        return self

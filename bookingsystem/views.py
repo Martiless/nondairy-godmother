@@ -34,3 +34,6 @@ class Sign_in(generic.DetailView):
             password = request.POST.get('password')
             print(username, password)
             return render(request, 'login.html')
+
+
+#class BookingList(generic.ListView)

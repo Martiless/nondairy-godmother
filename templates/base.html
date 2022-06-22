@@ -19,24 +19,33 @@
     <!-- Logo image and navigation bar -->
     <header>
         <div class="row">
-            <a href="index.html" class="col-md-8 logo">
+            <a href="index.html" class="col-md-7 logo">
                 <img src="static/images/webiste_logo.png" alt="logo">
 
             </a>
-            <div class="col-md-4">
+            <div class="col-md-5">
                 <ul class="nav nav-pills">
                     <li class="nav-item">
-                        <a class="nav-link active bg-success text-white" href="#">Home</a>
+                        <a class="nav-link active bg-success text-white" href="{% url 'bookingsystem:home' %}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Menus</a>
+                        <a class="nav-link" href="{% url 'bookingsystem:menus' %}">Menus</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Book a Table</a>
+                        <a class="nav-link" href="{% url 'bookingsystem:bookings' %}">Book a Table</a>
+                    </li>
+                    {% if user.is_authenticated %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
+                    </li>
+                    {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Log In</a>
+                        <a class="nav-link" href="{% url 'account_login' %}">Login</a>
                     </li>
+                    {% endif %}
                 </ul>
 
 

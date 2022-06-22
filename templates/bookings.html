@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<form>
+<form method="POST">{% csrf_token %}
     <div class="form-row">
         <div class="form-group col-md-6">
             <label for="Name">Full Name</label>
@@ -39,7 +39,7 @@
             <input class="booking-form" id="date" name="date" type="date" value="01-01-2022" required>
             <div class="form-group">
                 <label for="Time">Time</label>
-                <input class="booking-form" id="date" name="date" type="date" value="18:00" required>
+                <input class="booking-form" id="time" name="time" type="time" value="18:00" required>
             </div>
         </div>
         <button type="submit" class="btn btn-secondary">Book Now</button>

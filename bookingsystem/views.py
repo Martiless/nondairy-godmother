@@ -11,9 +11,12 @@ class Home(generic.DetailView):
           return render(request, 'index.html')
 
 
-#class BookingForm(generic.FormView):
-#    form = Booking
-#    template_name = 'bookings.html'
+class BookingForm(generic.DetailView):
+    form = Booking
+    template_name = 'bookings.html'
+
+    def get(self, request):
+          return render(request, 'bookings.html')
 
 
 class Menus(generic.DetailView):

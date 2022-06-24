@@ -7,19 +7,31 @@
 
 {% block content %}
 
-<h1>{% trans "Sign In" %}</h1>
+<div class="container">
+    <div class="row">
+      <div class="col-md-3 mt-5 offset-md-3">
+        <h2>{% trans "Log In" %}</h2>
 
-<p>{% blocktrans %}If you have not created an account yet, then please
-<a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
+        <p>{% blocktrans %}If you do not have an account, click
+          <a href="{{ signup_url }}">here</a> to create one.{% endblocktrans %}</p>
+      </div>
+    </div>
+  
 
 
-<form class="login" method="POST" action="{% url 'account_login' %}">
-  {% csrf_token %}
-  {{ form.as_p }}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-  {% endif %}
-  <button class="primaryAction" type="submit">{% trans "Sign In" %}</button>
-</form>
+    <div class="row">
+      <div class="col-md-3 mt-3 mb-5 offset-md-3">
+        <form class="login" method="POST" action="{% url 'account_login' %}">
+          {% csrf_token %}
+          {{ form.as_p }}
+          {% if redirect_field_value %}
+          <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+          {% endif %}
+          <button class="btn btn-outline-success btn-lg" type="submit">{% trans "Log In" %}</button>
+        </form>
+      </div>
+    </div>
+</div>
+
 
 {% endblock %}

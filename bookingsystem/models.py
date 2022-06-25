@@ -15,7 +15,7 @@ class Booking(models.Model):
 
     def __str__(self):
         return self.name
-        
+
 
 
 class Table(models.Model):

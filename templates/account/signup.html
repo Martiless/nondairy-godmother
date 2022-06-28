@@ -6,8 +6,8 @@
 
 {% block content %}
 
-
-<div class="container">
+<section id="register" class="register-image">
+<div class="square-container">
   <div class="row">
     <div class="col-md-3 mt-5 offset-md-3">
       <h2>{% trans "Register" %}</h2>
@@ -25,10 +25,11 @@
         {% if redirect_field_value %}
         <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
         {% endif %}
-        <button class="btn btn-outline-success btn-lg" type="submit">{% trans "Sign Up" %} &raquo;</button>
+        <button class="btn btn-success btn-lg" type="submit">{% trans "Sign Up" %} &raquo;</button>
       </form>
     </div>
   </div>
 </div>
+</section>
 
 {% endblock %}

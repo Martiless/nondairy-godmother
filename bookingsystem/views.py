@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.views import generic
-from .models import Booking
+from django.views.generic.edit import FormView
 from .forms import OnlineForm
 
 
@@ -12,12 +12,14 @@ class Home(generic.DetailView):
           return render(request, 'index.html')
 
 
-class BookingForm(generic.DetailView):
-    form = Booking
-    template_name = 'bookings.html'
-
-    def get(self, request):
-          return render(request, 'bookings.html')
+class BookingForm(FormView):
+    form_class = OnlineForm()
+    args = {}
+    def booking_view(self, request):
+        if request.method == 'POST':
+            form = OnlineForm(request.POST)
+        
+        return render(request, 'bookings.html')
 
 
 class Menus(generic.DetailView):
@@ -33,7 +35,6 @@ class Sign_in(generic.DetailView):
         if request.method == "POST":
             username = request.POST.get('username')
             password = request.POST.get('password')
-            print(username, password)
             return render(request, 'login.html')
 
 

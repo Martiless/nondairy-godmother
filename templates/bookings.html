@@ -2,8 +2,11 @@
 
 {% block content %}
 
-<form method="POST">{% csrf_token %}
-    <div class="form-row">
+<form method="POST">
+    {% csrf_token %}
+    {{form}}
+    
+   <!-- <div class="form-row">
         <div class="form-group col-md-6">
             <label for="Name">Full Name</label>
             <input type="name" class="booking-form" id="name" placeholder="Full Name" required>
@@ -41,7 +44,7 @@
                 <label for="Time">Time</label>
                 <input class="booking-form" id="time" name="time" type="time" value="18:00" required>
             </div>
-        </div>
+        </div>-->
         <button id="submit-button" class="btn btn-success">Book Now</button>
 </form>
 

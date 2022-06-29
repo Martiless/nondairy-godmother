@@ -239,6 +239,12 @@ hr {
 
 /*Thank you page*/
 
+h5 a:link {
+    color: #FFFFFF;
+
+
+}
+
 #thank-you-image {
     height: 600px;
     width: 100%;

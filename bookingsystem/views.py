@@ -1,8 +1,12 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.http import HttpResponseRedirect
 from django.views import generic
 from django.views.generic.edit import FormView
 from .forms import OnlineForm
+from django.contrib import messages
+from django.urls import reverse_lazy
+
 
 
 class Home(generic.DetailView):
@@ -13,14 +17,22 @@ class Home(generic.DetailView):
 
 
 class BookingForm(FormView):
-    form_class = OnlineForm()
-    args = {}
+    template_name = 'bookings.html'
+    form_class = OnlineForm
+    success_url = '/thank_you/'
+    
     def booking_view(self, request):
         if request.method == 'POST':
-            form = OnlineForm(request.POST)
-        
+            form = OnlineForm(request.POST)  
         return render(request, 'bookings.html')
+        messages.success(request, "Thank you for booking with us. You will receive a confirmation email shortly.")
 
+
+class ThankYou(generic.DetailView):
+    template_name = 'thank_you.html'
+
+    def get(self, request):
+          return render(request, 'thank_you.html')
 
 class Menus(generic.DetailView):
     template_name = 'menus.html'

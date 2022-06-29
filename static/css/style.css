@@ -228,11 +228,27 @@ hr {
     padding-left: 170px;
     border-style: solid;
     border-color: #ffffff;
-    background-color: rgba(255, 255, 255, 0.808);
+    background-color: rgba(255, 255, 255, 0.788);
     border-width: 1px;
     margin-left: 450px;
     text-align: center;
 
+}
+
+
+/*Thank you page*/
+
+#outer-box {
+    font-size: 150%;
+    font-family: Lora, sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    width: 500px;
+    height: auto;
+    background-color: rgba(50, 134, 58, .7);
+    bottom: 325px;
+    right: 500px;
+    position: absolute;
 }
 /* Footer */
 

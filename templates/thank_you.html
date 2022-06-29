@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section id="hero-outer">
+    <div id="hero-image"></div>
+    <div id="outer-box">
+        <p><i class="fa-regular fa-leaf-heart"></i></p>
+        <h2>Thank you for booking with us!</h2>
+        <h3>Your booking has been successful. You will receive a confirmation email shortly</h3>
+        <h5>To view our menus please click <a href="{% url 'bookingsystem:menus' %}">here</a></h5>
+    </div>
+
+</section>
+
+
+{%endblock%}

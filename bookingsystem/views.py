@@ -20,24 +20,30 @@ class BookingForm(FormView):
     template_name = 'bookings.html'
     form_class = OnlineForm
     success_url = '/thank_you/'
-    
-    def booking_view(self, request):
-        if request.method == 'POST':
-            form = OnlineForm(request.POST)  
+
+    def booking_view(self, request):   
         return render(request, 'bookings.html')
+    
+    def post(self, request):
+        form = OnlineForm(data=request.POST)
+        if form.is_valid():
+            booking = form.save(commit=True)
+            booking.save()
+
+        return render(request, 'thank_you.html')
 
 
 class ThankYou(generic.DetailView):
     template_name = 'thank_you.html'
 
     def get(self, request):
-          return render(request, 'thank_you.html')
+        return render(request, 'thank_you.html')
 
 class Menus(generic.DetailView):
     template_name = 'menus.html'
 
     def get(self, request):
-          return render(request, 'menus.html')
+        return render(request, 'menus.html')
 
 
 class Sign_in(generic.DetailView):

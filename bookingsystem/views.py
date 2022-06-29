@@ -25,7 +25,6 @@ class BookingForm(FormView):
         if request.method == 'POST':
             form = OnlineForm(request.POST)  
         return render(request, 'bookings.html')
-        messages.success(request, "Thank you for booking with us. You will receive a confirmation email shortly.")
 
 
 class ThankYou(generic.DetailView):

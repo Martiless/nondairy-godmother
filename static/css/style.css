@@ -236,6 +236,27 @@ hr {
 
 }
 
+/* booking page */
+
+.book_a_table {
+    background-image: url('/static/images/restaurant_image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.booking_container {
+    width: 800px;
+    height: 730px;
+    padding-left: 137px;
+    border-style: solid;
+    border-color: #ffffff;
+    color: #ffffff;
+    background-color: rgba(50, 134, 58, .5);
+    border-width: 1px;
+    margin: auto;
+}
+
 
 /*Thank you page*/
 

@@ -14,15 +14,9 @@ header {
 /* Navigation bar */
 .nav-item .nav-link {
     font-family: Lora, sans-serif;
-    font-size: large;
+    font-size: x-large;
     letter-spacing: 5px;
-    color: #32863A;
     padding: 15px;
-
-}
-
-.nav-pill {
-    color: #32863A;
 }
 
 /* Main area on home page */

@@ -15,46 +15,48 @@
     <title> The Non Dairy Godmother</title>
 </head>
 
-<body>
+<body class="d-flex flex-column h-100 main-bg">
     <!-- Logo image and navigation bar -->
-    <header>
+    <!--<header>
         <div class="row">
-            <a href="{% url 'bookingsystem:home' %}" class="col-md-7 logo">
+            <a href="{% url 'bookingsystem:home' %}">
                 <img src="{% static 'images/website_logo.png' %}" alt="logo">
-
             </a>
-            <div class="col-md-5">
-                <ul class="nav nav-pills">
-                    <li class="nav-item">
-                        <a class="nav-link active bg-success text-white" href="{% url 'bookingsystem:home' %}">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'bookingsystem:menus' %}">Menus</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'bookingsystem:bookings' %}">Book a Table</a>
-                    </li>
-                    {% if user.is_authenticated %}
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
-                    </li>
-                    {% else %}
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_login' %}">Login</a>
-                    </li>
-                    {% endif %}
-                </ul>
-
-
-            </div>
         </div>
+    </header>-->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #32863A;">
+        <a href="{% url 'bookingsystem:home' %}">
+            <img src="{% static 'images/website_logo.png' %}" alt="logo">
+        </a>
+        <div class="container-fluid">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'bookingsystem:home' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'bookingsystem:menus' %}">Menus</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'bookingsystem:bookings' %}">Book a Table</a>
+                </li>
+                {% if user.is_authenticated %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
+                </li>
+                {% else %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'account_login' %}">Login</a>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+        </div>
+    </nav>
 
-    </header>
 
-   
     <main class="flex-shrink-0 main-bg">
         {% block content %}
         <!-- Content Goes here -->
@@ -113,7 +115,6 @@
             </div>
         </footer>
     </section>
-
 
 </body>
 

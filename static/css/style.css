@@ -85,7 +85,7 @@ header {
     text-align: center;
 }
 
-.fa-regular {
+.fa-seedling {
     font-size: x-large;
     color: #FFFFFF;
 }
@@ -286,7 +286,6 @@ hr {
     font-family: Lora, sans-serif;
     color: #FFFFFF;
     text-align: center;
-    width: 500px;
     height: auto;
     background-color: rgba(50, 134, 58, .7);
     bottom: 325px;
@@ -295,7 +294,7 @@ hr {
 }
 /* Footer */
 
-.fa {
+#footer .fa {
     color: #32863A;
     font-size: large;
     padding: auto;

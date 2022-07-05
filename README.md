@@ -162,7 +162,22 @@ Testing information can be viewed [here]( "Link to testing information")
 ***
 
 ## Bugs:
-1. 
+1. Styling of the base page was not consistant across all pages on the site.
+      * I had not included "{% load static %}" at the beginning of my base.html page. Once this was edited, all pages loaded correctly. 
+1. Font Awesome icons not appearing on site.
+      * 
+1. Booking page was not loading, the following error message was coming up:
+      * After debugging should elements of the the booking model didn't exist, I realised that I had changed elements of the model without making any migrations.
+<details>
+<summary>Booking Page Error</summary>
+
+![Booking Page Error](/static/documents/booking_page_error.png)
+</details>
+
+1. Bookings appeared to be completed on the site but nothing was happening in the backend. 
+      * One reason this wasn't working was because I had manually entered the booking form into the bookings.html file as apose to entering it using django's built in features.
+      * Once this was fixed I then had to add the POST function to the bookings view. 
+
 
 ***
 [Back to top](#Non-dairy-Godmother) 
@@ -173,12 +188,15 @@ For the purpose of this project, the following technologies were used.
 ### Languages:
 * HTML
 * CSS
+* Python
 * Javascript
-* Python 
-* Django
-* PostgreSQL
+ 
+
 
 ### Frameworks, Libraries, Programs & Applications Used:
+* Django
+* PostgreSQL
+* Bootstrap
 
 #### Google Font
 

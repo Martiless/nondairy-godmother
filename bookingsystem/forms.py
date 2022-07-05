@@ -19,3 +19,13 @@ class OnlineForm(ModelForm):
             'date': DateInput(),
             'time': TimeInput()
         }
+
+
+class EditBookingForm(ModelForm):
+    class Meta:
+        model = Booking
+        fields = ['name', 'number_of_people', 'date', 'time']
+        widgets = {
+            'date': DateInput(),
+            'time': TimeInput()
+        }

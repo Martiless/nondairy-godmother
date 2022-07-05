@@ -55,7 +55,12 @@ class Sign_in(generic.DetailView):
             return render(request, 'login.html')
 
 
-#class BookingList(generic.ListView)
+class TableList(generic.ListView):
+    template_name = 'table_listing.html'
+
+    def get(self, request):
+        return render(request, 'table_listing.html')
+
 
 class editBooking(generic.DetailView):
     template_name = 'edit_bookings.html'

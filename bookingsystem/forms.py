@@ -21,7 +21,7 @@ class OnlineForm(ModelForm):
         }
 
 
-class EditBookingForm(ModelForm):
+class EditBookingForm(forms.ModelForm):
     class Meta:
         model = Booking
         fields = ['name', 'number_of_people', 'date', 'time']

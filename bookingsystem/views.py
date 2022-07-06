@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from django.http import HttpResponseRedirect
 from django.views import generic
 from django.views.generic.edit import FormView
-from .forms import OnlineForm
+from .forms import OnlineForm, EditBookingForm
 from django.contrib import messages
 from django.urls import reverse_lazy
 
@@ -62,8 +62,18 @@ class TableList(generic.ListView):
         return render(request, 'table_listing.html')
 
 
-class editBooking(generic.DetailView):
+class editBooking(FormView):
     template_name = 'edit_bookings.html'
+    form_class = EditBookingForm
+    success_url = '/thank_you/'
+    
+    def edit_booking_form(request):
+        if request.method == 'POST':
+            searched = request.POST['searched']
+            
+            return render(request, 'edit_bookings.html', {'searched':searched} )
+        else:
+            return render(request, 'edit_bookings.html')
 
-    def get(self, request):
-        return render(request, 'edit_bookings.html')
+
+        

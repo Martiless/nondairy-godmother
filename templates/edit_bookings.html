@@ -3,7 +3,18 @@
 {% block content %}
 
 {% if user.is_authenticated  %}
-<form method="POST" action="">
+<form method="POST" action="edit">
+    {% csrf_token %}
+    {% if searched %}
+        <p>You searched for {{ searched }}</p>
+
+    {% else %}
+        <p>Please enter you name to find your booking</p>
+
+    {%endif%}
+
+
+    {{ form }}
 
     <button type="submit" class="btn btn-secondary"> Submit Changes</button>
 </form>

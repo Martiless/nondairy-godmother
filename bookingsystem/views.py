@@ -2,7 +2,6 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
 from django.views import generic
-from django import LoginRequiredMixin
 from django.views.generic.edit import FormView
 from .forms import OnlineForm, EditBookingForm
 from django.contrib import messages
@@ -56,7 +55,7 @@ class Sign_in(generic.DetailView):
             return render(request, 'login.html')
 
 
-class TableList(ListView, LoginRequiredMixin):
+class TableList(generic.ListView):
     template_name = 'table_listing.html'
 
     def get(self, request):

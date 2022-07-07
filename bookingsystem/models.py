@@ -69,7 +69,9 @@ Models to be used in the forms.py and views.py
 
 
 class Table(models.Model):
+    Booker = models.CharField(max_length=50)
     TableNo = models.CharField(max_length=10, choices=TABLE_NUMBER, default='1')
+    location = models.CharField(max_length=10, choices=TABLE_CHOICE, default='Inside')
     max_pax = models.CharField(max_length=10, choices=TABLE_CAPACITY, default='2')
 
     def __str__(self):
@@ -78,12 +80,13 @@ class Table(models.Model):
 
 
 class Booking(models.Model):
-    name = models.CharField(max_length=60)
+    name = models.CharField(max_length=50)
     email_address = models.EmailField(primary_key=True)
     phone = models.IntegerField()
     number_of_people = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(10)], default='1', help_text='For parties of more than 10, please call us on 021 4569 782')
     date = models.DateField()
     time = models.TimeField()
+    table = models.CharField(max_length=50, choices=TABLE_CHOICE, default='Inside')
     occasion = models.CharField(max_length=100, choices=OCCASION_CHOICE, default='Birthday')
 
     def __str__(self):

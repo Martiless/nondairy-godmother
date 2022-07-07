@@ -63,12 +63,12 @@ class TableList(generic.ListView):
 
 
 class editBooking(FormView):
-    template_name = 'edit_bookings.html'
+    template_name = 'my_bookings.html'
     form_class = EditBookingForm
     success_url = '/thank_you/'
     
     def edit_booking_form(request):
-        return render(request, 'edit_bookings.html')
+        return render(request, 'my_bookings.html')
 
 
         

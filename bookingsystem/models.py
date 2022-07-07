@@ -69,7 +69,7 @@ Models to be used in the forms.py and views.py
 
 
 class Table(models.Model):
-    Table_number = models.CharField(max_length=10, choices=TABLE_NUMBER, default='1')
+    TableNo = models.CharField(max_length=10, choices=TABLE_NUMBER, default='1')
     max_pax = models.CharField(max_length=10, choices=TABLE_CAPACITY, default='2')
 
     def __str__(self):

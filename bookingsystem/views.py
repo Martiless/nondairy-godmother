@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
 from django.views import generic
+from django import LoginRequiredMixin
 from django.views.generic.edit import FormView
 from .forms import OnlineForm, EditBookingForm
 from django.contrib import messages
@@ -55,7 +56,7 @@ class Sign_in(generic.DetailView):
             return render(request, 'login.html')
 
 
-class TableList(generic.ListView):
+class TableList(ListView, LoginRequiredMixin):
     template_name = 'table_listing.html'
 
     def get(self, request):
@@ -68,12 +69,7 @@ class editBooking(FormView):
     success_url = '/thank_you/'
     
     def edit_booking_form(request):
-        if request.method == 'POST':
-            searched = request.POST['searched']
-            
-            return render(request, 'edit_bookings.html', {'searched':searched} )
-        else:
-            return render(request, 'edit_bookings.html')
+        return render(request, 'edit_bookings.html')
 
 
         

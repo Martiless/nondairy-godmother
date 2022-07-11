@@ -1,26 +1,17 @@
 {% extends "base.html" %}
 
 {% block content %}
-
-{% if user.is_authenticated  %}
-<form method="POST" action="edit">
-    {% csrf_token %}
-    {% if searched %}
-        <p>You searched for {{ searched }}</p>
-
-    {% else %}
-        <p>Please enter you name to find your booking</p>
-
-    {%endif%}
+<section id="booking" class="book_a_table">
+    <div class="booking_container">
+        <div class="row">
+            <div class="col-md-3 mt-5 offset-md-3">
+                
+            </div>
+        </div>
+    </div>
+</section>
 
 
-    {{ form }}
-
-    <button type="submit" class="btn btn-secondary"> Submit Changes</button>
-</form>
-{% else %}
-<a href="{% url 'login' %}">To edit you bookings please sign up </a> 
-{%endif%}
 
 
 {%endblock%}

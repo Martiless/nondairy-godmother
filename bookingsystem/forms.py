@@ -15,6 +15,7 @@ class OnlineForm(ModelForm):
     class Meta:
         model = Booking
         fields = '__all__'
+        exclude = ('user', )
         widgets = {
             'date': DateInput(),
             'time': TimeInput()

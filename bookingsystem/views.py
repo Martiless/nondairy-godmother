@@ -39,6 +39,7 @@ class ThankYou(generic.DetailView):
     def get(self, request):
         return render(request, 'thank_you.html')
 
+
 class Menus(generic.DetailView):
     template_name = 'menus.html'
 
@@ -55,14 +56,7 @@ class Sign_in(generic.DetailView):
             return render(request, 'login.html')
 
 
-class TableList(generic.ListView):
-    template_name = 'table_listing.html'
-
-    def get(self, request):
-        return render(request, 'table_listing.html')
-
-
-class editBooking(FormView):
+class myBooking(FormView):
     template_name = 'my_bookings.html'
     form_class = EditBookingForm
     success_url = '/thank_you/'

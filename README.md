@@ -178,6 +178,14 @@ Testing information can be viewed [here]( "Link to testing information")
       * One reason this wasn't working was because I had manually entered the booking form into the bookings.html file as apose to entering it using django's built in features.
       * Once this was fixed I then had to add the POST function to the bookings view. 
 
+1. When trying to add specific users the booking form loaded but throw up a ProgrammingError when the user clicked on "Book Now"
+      * I had to do a bit of troubleshooting to solve this one. After spending a bit of time researching and chatting with other students on Slack it was discovered that my view for the booking form was written for the older version of the booking model and had to be updated to include the user request.
+      * After making these changes a user was now able to complete the booking and were redirected to the "Thank you" page.
+<details>
+<summary>ID Error</summary>
+
+![ID Error](/static/documents/id_error.png)
+</details>
 
 ***
 [Back to top](#Non-dairy-Godmother) 

@@ -29,7 +29,7 @@ class Booking(models.Model):
     Model to be used in the forms.py and views.py.
     It uses the User Foreign Key so that each book will be associated with a
     specific user.
-    The rest of the information is saved for the booking 
+    The rest of the information is saved for the booking
     """
 
     user = models.ForeignKey(User, on_delete=models.CASCADE)

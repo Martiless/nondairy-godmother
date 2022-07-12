@@ -25,9 +25,12 @@ class BookingForm(FormView):
         return render(request, 'bookings.html')
     
     def post(self, request):
+        User = request.user
         form = OnlineForm(data=request.POST)
         if form.is_valid():
-            booking = form.save(commit=True)
+            booking = form.save(commit=False)
+            booking.user = User
+        else:
             booking.save()
 
         return render(request, 'thank_you.html')

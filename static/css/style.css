@@ -251,6 +251,20 @@ hr {
     margin: auto;
 }
 
+.login_container {
+    width: 800px;
+    height: 550px;
+    padding-left: 137px;
+    border-style: solid;
+    border-color: #ffffff;
+    color: #ffffff;
+    background-color: rgba(50, 134, 58, .5);
+    border-width: 1px;
+    margin: auto;
+    padding-top: 71px;
+}
+
+
 
 /*Thank you page*/
 

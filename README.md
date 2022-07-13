@@ -187,6 +187,17 @@ Testing information can be viewed [here]( "Link to testing information")
 ![ID Error](/static/documents/id_error.png)
 </details>
 
+1. After correcting the above ID error it caused another ProgrammingError when I logged into the django admin page and clicked on the bookings tab.
+      * After countless attempts to solve this error but debugging, troubleshooting and reaching out to various programming communities (including Slack) I had to eventually contact the CI tutors. 
+      * There were serveral attempts to find the issue in the code, looking at the 'list_display' in the admin.py file, correcting errors in the models.py file neither of which solved the problem.
+      * We cleared the previous migrations in order to create the admin page again but the tutor noticed that the Heroku postgres database was still connected. 
+      * I reset the database from inside Heroku and performed the migrations, this corrected the issue 
+<details>
+<summary>Admin Page Error</summary>
+
+![Admin Page Error](/static/documents/admin_page_error.PNG
+</details>
+
 ***
 [Back to top](#Non-dairy-Godmother) 
 

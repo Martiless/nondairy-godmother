@@ -32,10 +32,10 @@ class Booking(models.Model):
     The rest of the information is saved for the booking
     """
 
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    name = models.CharField(max_length=60)
-    email_address = models.EmailField(primary_key=True)
-    phone = models.IntegerField()
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="user_bookings")
+    name = models.CharField(max_length=60, null=True, blank=True)
+    email_address = models.EmailField(null=True, blank=True)
+    phone = models.IntegerField(null=True, blank=True)
     number_of_people = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(10)], default='1', help_text='For parties of more than 10, please call us on 021 4569 782')
     date = models.DateField()
     time = models.TimeField()

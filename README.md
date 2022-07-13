@@ -171,7 +171,7 @@ Testing information can be viewed [here]( "Link to testing information")
 <details>
 <summary>Booking Page Error</summary>
 
-![Booking Page Error](/static/documents/booking_page_error.png)
+![Booking Page Error](/static/documents/errors/booking_page_error.png)
 </details>
 
 1. Bookings appeared to be completed on the site but nothing was happening in the backend. 
@@ -184,7 +184,7 @@ Testing information can be viewed [here]( "Link to testing information")
 <details>
 <summary>ID Error</summary>
 
-![ID Error](/static/documents/id_error.png)
+![ID Error](/static/documents/errors/id_error.png)
 </details>
 
 1. After correcting the above ID error it caused another ProgrammingError when I logged into the django admin page and clicked on the bookings tab.
@@ -195,7 +195,7 @@ Testing information can be viewed [here]( "Link to testing information")
 <details>
 <summary>Admin Page Error</summary>
 
-![Admin Page Error](/static/documents/admin_page_error.PNG
+![Admin Page Error](/static/documents/errors/admin_page_error.png)
 </details>
 
 ***

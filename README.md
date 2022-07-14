@@ -95,7 +95,7 @@ The information above was then used to create a structure for the website. Below
 
 
 ## Skeleton:
-[Wireframes](/static/documents/WIREFRAMES.MD) were created to set out the initial appearance of the website while also making sure to keep the end-user in mind at all times. Wireframes were created using [Balsamiq](https://balsamiq.com/).  
+[Wireframes](/static/documents/wireframes/WIREFRAMES.MD) were created to set out the initial appearance of the website while also making sure to keep the end-user in mind at all times. Wireframes were created using [Balsamiq](https://balsamiq.com/).  
 
 ## Surface:
 [Please see the live site here]()  

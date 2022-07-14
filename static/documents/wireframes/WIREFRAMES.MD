@@ -9,7 +9,7 @@ As you can see the finished project is slightly different from the original mock
 <details>
 <summary>Home Page</summary>
 
-![Home Page](/static/documents/home_page.png)
+![Home Page](/static/documents/wireframes/home_page.png)
 </details>
 
 ***
@@ -17,7 +17,7 @@ As you can see the finished project is slightly different from the original mock
 <details>
 <summary>Menu Page</summary>
 
-![Menu Page](/static/documents/menus.png)
+![Menu Page](/static/documents/wireframes/menus.png)
 </details>
 
 ***
@@ -25,7 +25,7 @@ As you can see the finished project is slightly different from the original mock
 <details>
 <summary>Book A Table</summary>
 
-![Book A Table](/static/documents/book_a_table.png)
+![Book A Table](/static/documents/wireframes/book_a_table.png)
 </details>
 
 ***
@@ -33,7 +33,7 @@ As you can see the finished project is slightly different from the original mock
 <details>
 <summary>Thank You Message</summary>
 
-![Thank You Message](/static/documents/thank_you_message.png)
+![Thank You Message](/static/documents/wireframes/thank_you_message.png)
 </details>
 
 ***
@@ -41,7 +41,7 @@ As you can see the finished project is slightly different from the original mock
 <details>
 <summary>Login Page</summary>
 
-![Login Page](/static/documents/login_page.png)
+![Login Page](/static/documents/wireframes/login_page.png)
 </details>
 
 ***
@@ -49,7 +49,7 @@ As you can see the finished project is slightly different from the original mock
 <details>
 <summary>Sign Up Page</summary>
 
-![Sign Up Page](/static/documents/sign_up_page.png)
+![Sign Up Page](/static/documents/wireframes/sign_up_page.png)
 </details>
 
 Click [here](/README.md) to go back to the README doc

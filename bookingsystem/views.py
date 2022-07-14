@@ -16,18 +16,19 @@ class Home(generic.DetailView):
           return render(request, 'index.html')
 
 
-class BookingForm(FormView):
+class BookingView(FormView):
     template_name = 'bookings.html'
     form_class = OnlineForm
     success_url = '/thank_you/'
 
-    def booking_view(self, request):   
+    def booking_view(self, request):
         return render(request, 'bookings.html')
 
     def post(self, request):
         form = OnlineForm(data=request.POST)
         if form.is_valid():
-            booking = form.save(commit=True)
+            booking = form.save(commit=False)
+            booking.user = request.user
             booking.save()
 
         return render(request, 'thank_you.html')
@@ -47,7 +48,7 @@ class Menus(generic.DetailView):
         return render(request, 'menus.html')
 
 
-class Sign_in(generic.DetailView):
+class SignIn(generic.DetailView):
 
     def login_view(self, request):
         if request.method == "POST":
@@ -56,7 +57,7 @@ class Sign_in(generic.DetailView):
             return render(request, 'login.html')
 
 
-class myBooking(FormView):
+class EditBookingView(FormView):
     template_name = 'my_bookings.html'
     form_class = EditBookingForm
     success_url = '/thank_you/'

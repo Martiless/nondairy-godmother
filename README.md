@@ -90,7 +90,7 @@ The information above was then used to create a structure for the website. Below
 <details>
 <summary>Sitemap</summary>
 
-![Sitemap]()
+![Sitemap](/static/images/site_map.png)
 </details>
 
 

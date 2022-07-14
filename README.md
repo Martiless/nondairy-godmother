@@ -102,17 +102,22 @@ The information above was then used to create a structure for the website. Below
 
 
 ### Color: 
-To create a visually appealing website but also a website that was easy for people to read I used several different sites to test color contrast. I wanted to make sure the color scheme was not only eye-catching but also that it passed the LightHouse Accessibility test. 
+For this website I wanted to make it visually appealing, easy for people to read but also that it instantly came across as a 'Plant Power' website. As it is for a vegan restaurnat I wanted the look to be clean and fresh. For this I picked green as my main color, using white as the contrasting color to make everything appear modern and clean.
+I wanted to make sure the color scheme was not only eye-catching but also that it passed the LightHouse Accessibility test. 
 
-Initially, I looked at what colors work best with the green color I had chosen as my main color. I did this by using a color wheel.  
-![Color Wheel]()
+To make sure text could be seen without issue on my chosen colors I used [Coolors](https://coolors.co/) color contrast checker.
 
+<details>
+<summary>Color Checker 1</summary>
 
-Following on from the color wheel, an orange was decided upon to contrast the green. To make sure text could be seen without issue on my chosen colors I used [Coolors]() color contrast checker.
+![Color Checker 1](/static/images/colour_checker1.png)
+</details>
 
+<details>
+<summary>Color Checker 2</summary>
 
-![Color Checker 1]()
-![Color Checker 2]()
+![Color Checker 2](/static/images/colour_checker2.png)
+</details>
 
 
 

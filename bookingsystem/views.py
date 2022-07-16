@@ -1,15 +1,15 @@
-from django.shortcuts import render
-from django.http import HttpResponse
-from django.http import HttpResponseRedirect
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.views import generic
 from django.views.generic.edit import FormView
 from .forms import OnlineForm, EditBookingForm
 from django.contrib import messages
-from django.urls import reverse_lazy
-
+from .models import Booking
 
 
 class Home(generic.DetailView):
+    """
+    Renders the Index page in the browser 
+    """
     template_name = 'index.html'
 
     def get(self, request):
@@ -17,6 +17,9 @@ class Home(generic.DetailView):
 
 
 class BookingView(FormView):
+    """
+    Renders the Booking form page in the browser 
+    """
     template_name = 'bookings.html'
     form_class = OnlineForm
     success_url = '/thank_you/'
@@ -35,6 +38,9 @@ class BookingView(FormView):
 
 
 class ThankYou(generic.DetailView):
+    """
+    Renders the Thank You page in the browser 
+    """
     template_name = 'thank_you.html'
 
     def get(self, request):
@@ -42,13 +48,17 @@ class ThankYou(generic.DetailView):
 
 
 class Menus(generic.DetailView):
-    template_name = 'menus.html'
-
+    """
+    Renders the Menu page in the browser 
+    """
     def get(self, request):
         return render(request, 'menus.html')
 
 
 class SignIn(generic.DetailView):
+    """
+    Renders the Login page in the browser 
+    """
 
     def login_view(self, request):
         if request.method == "POST":
@@ -57,13 +67,22 @@ class SignIn(generic.DetailView):
             return render(request, 'login.html')
 
 
-class EditBookingView(FormView):
+class ListBookingView(generic.ListView):
+    """
+    This is the view that will bring up the
+    list of bookings for a particular users 
+    so that they can be edited or deleted 
+    """
     template_name = 'my_bookings.html'
-    form_class = EditBookingForm
-    success_url = '/thank_you/'
     
-    def edit_booking_form(request):
-        return render(request, 'my_bookings.html')
+    def get(self, request, *args, **kwargs):
+        if request.user.is_authenticated:
+            bookings = Booking.objects.filter(user=request.user)
+            my_bookings = filter(self, bookings)
 
-
-        
+            return render(request, 'my_bookings.html', {
+                'my_bookings': my_bookings
+            }
+            )
+        else:
+            return redirect('account_login')

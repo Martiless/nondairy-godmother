@@ -8,10 +8,12 @@ from .models import Booking
 
 class Home(generic.DetailView):
     """
-    Renders the Index page in the browser 
+    Renders the Index page in the browser
     """
     template_name = 'index.html'
 
+# The get request returns the template set out above
+# In this case it was the index.html template
     def get(self, request):
           return render(request, 'index.html')
 

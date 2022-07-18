@@ -17,8 +17,7 @@ class OnlineForm(ModelForm):
         fields = '__all__'
         exclude = ('user', )
         widgets = {
-            'date': DateInput(),
-            'time': TimeInput()
+            'date': DateInput()
         }
 
 
@@ -27,6 +26,5 @@ class EditBookingForm(forms.ModelForm):
         model = Booking
         fields = ['name', 'number_of_people', 'date', 'time']
         widgets = {
-            'date': DateInput(),
-            'time': TimeInput()
+            'date': DateInput()
         }

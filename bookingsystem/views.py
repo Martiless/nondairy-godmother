@@ -41,7 +41,7 @@ class BookingView(FormView):
 
 class ThankYou(generic.DetailView):
     """
-    Renders the Thank You page in the browser 
+    Renders the Thank You page in the browser
     """
     template_name = 'thank_you.html'
 
@@ -76,7 +76,7 @@ class ListBookingView(generic.ListView):
     so that they can be edited or deleted 
     """
     template_name = 'my_bookings.html'
-    
+
     def get(self, request, *args, **kwargs):
         if request.user.is_authenticated:
             bookings = Booking.objects.filter(user=request.user)

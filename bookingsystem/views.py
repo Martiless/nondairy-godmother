@@ -1,9 +1,9 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.shortcuts import render, redirect
 from django.views import generic
 from django.views.generic.edit import FormView
 from .forms import OnlineForm, EditBookingForm
 from django.contrib import messages
-from .models import Booking
+from .models import Booking, TIME_CHOICE, TABLE_CHOICE
 
 
 class Home(generic.DetailView):

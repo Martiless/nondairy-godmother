@@ -308,6 +308,10 @@ hr {
 }
 /* Footer */
 
+#footer {
+    margin-top: 10px;
+}
+
 #footer .fa {
     color: #32863A;
     font-size: large;

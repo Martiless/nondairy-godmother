@@ -3,7 +3,7 @@ from django.views import generic
 from django.views.generic.edit import FormView
 from .forms import OnlineForm, EditBookingForm
 from django.contrib import messages
-from .models import Booking, TIME_CHOICE, TABLE_CHOICE
+from .models import Booking
 
 
 class Home(generic.DetailView):
@@ -20,7 +20,7 @@ class Home(generic.DetailView):
 
 class BookingView(FormView):
     """
-    Renders the Booking form page in the browser 
+    Renders the Booking form page in the browser
     """
     template_name = 'bookings.html'
     form_class = OnlineForm
@@ -51,7 +51,7 @@ class ThankYou(generic.DetailView):
 
 class Menus(generic.DetailView):
     """
-    Renders the Menu page in the browser 
+    Renders the Menu page in the browser
     """
     def get(self, request):
         return render(request, 'menus.html')
@@ -59,7 +59,7 @@ class Menus(generic.DetailView):
 
 class SignIn(generic.DetailView):
     """
-    Renders the Login page in the browser 
+    Renders the Login page in the browser
     """
 
     def login_view(self, request):
@@ -72,8 +72,8 @@ class SignIn(generic.DetailView):
 class ListBookingView(generic.ListView):
     """
     This is the view that will bring up the
-    list of bookings for a particular users 
-    so that they can be edited or deleted 
+    list of bookings for a particular users
+    so that they can be edited or deleted
     """
     template_name = 'my_bookings.html'
 
@@ -88,3 +88,9 @@ class ListBookingView(generic.ListView):
             )
         else:
             return redirect('account_login')
+
+class EditBookingsView(FormView):
+   
+    template_name = 'edit_bookings.html'
+    form_class = EditBookingForm
+    success_url = '/my_bookings/'

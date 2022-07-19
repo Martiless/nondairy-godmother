@@ -1,8 +1,7 @@
 from django.shortcuts import render, redirect
 from django.views import generic
 from django.views.generic.edit import FormView
-from .forms import OnlineForm, EditBookingForm
-from django.contrib import messages
+from .forms import OnlineForm
 from .models import Booking
 
 
@@ -15,7 +14,7 @@ class Home(generic.DetailView):
 # The get request returns the template set out above
 # In this case it was the index.html template
     def get(self, request):
-          return render(request, 'index.html')
+        return render(request, 'index.html')
 
 
 class BookingView(FormView):
@@ -69,18 +68,19 @@ class SignIn(generic.DetailView):
             return render(request, 'login.html')
 
 
-class ListBookingView(generic.ListView):
+class ListBookingView(generic.DetailView):
     """
     This is the view that will bring up the
     list of bookings for a particular users
     so that they can be edited or deleted
     """
+
     template_name = 'my_bookings.html'
 
     def get(self, request, *args, **kwargs):
         if request.user.is_authenticated:
-            bookings = Booking.objects.filter(user=request.user)
-            my_bookings = filter(self, bookings)
+            booking = Booking.objects.filter(user=request.user)
+            my_bookings = filter(self, booking)
 
             return render(request, 'my_bookings.html', {
                 'my_bookings': my_bookings
@@ -90,7 +90,11 @@ class ListBookingView(generic.ListView):
             return redirect('account_login')
 
 class EditBookingsView(FormView):
-   
+
+
     template_name = 'edit_bookings.html'
-    form_class = EditBookingForm
+    form_class = OnlineForm
     success_url = '/my_bookings/'
+
+    def edit_bookings(request, booking_id):
+        return render(request, 'edit_bookings.html')

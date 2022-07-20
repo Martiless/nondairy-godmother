@@ -89,6 +89,7 @@ class ListBookingView(generic.DetailView):
         else:
             return redirect('account_login')
 
+
 class EditBookingsView(FormView):
 
 

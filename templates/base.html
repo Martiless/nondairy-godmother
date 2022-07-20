@@ -17,14 +17,6 @@
 </head>
 
 <body class="d-flex flex-column h-100 main-bg">
-    <!-- Logo image and navigation bar -->
-    <!--<header>
-        <div class="row">
-            <a href="{% url 'bookingsystem:home' %}">
-                <img src="{% static 'images/website_logo.png' %}" alt="logo">
-            </a>
-        </div>
-    </header>-->
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #32863A;">
         <a href="{% url 'bookingsystem:home' %}">
             <img src="{% static 'images/website_logo.png' %}" style="height: 150px;" alt="logo">
@@ -57,7 +49,6 @@
                 {% endif %}
             </ul>
         </div>
-        </div>
     </nav>
     <!--Code taken for CI walkthrough project-->
     <div>
@@ -65,13 +56,16 @@
             <div class="row">
                 <div class="col-md-8 offset-md-2">
                     {% for message in messages %}
-                    <div class="alert {{ message.tags }} alert-dismissable fade show" id="msg" role="alert">
+                    <div class="alert {{ message.tags }} alert-success alert-dismissable fade show" id="msg" role="alert">
                         {{ message | safe }}
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"></button>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
                     </div>
                     {% endfor %}
                 </div>
             </div>
+        </div>
         </div>
 
 
@@ -127,9 +121,9 @@
         <script>
             setTimeout(function () {
                 let messages = document.getElementById('msg');
-                let alert = new bootstrap.alert(messages);
+                let alert = new bootstrap.Alert(messages);
                 alert.close();
-            }, 2500);
+            }, 2000);
         </script>
 </body>
 

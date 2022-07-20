@@ -10,21 +10,23 @@
             <div class="col-md-3 mt-5 offset-md-3">
                 {% for booking in bookings %}
                 <div class="col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h4 class='card-title text-uppercase text-center'>{{ booking.date }} at
+                    <div>
+                        <div>
+                            <h4>{{ booking.date }} at
                                 {{ booking.time }}</h4>
-                            <h6 class="text-uppercase">{{ booking.name }}</h6>
-                            <div class='card-text'>
-                                <p><i class="fas fa-phone"></i> {{ bookings.phone }}</p>
-                                <p><i class="far fa-envelope"></i> {{ bookings.email }}</p>
-                                <p>Number of People: {{ bookings.number_of_people }}</p>
-
-                                {%endfor%}
-
+                            <h6>{{ booking.name }}</h6>
+                            <div>
+                                <p>{{ booking.phone }}</p>
+                                <p>{{ booking.email }}</p>
+                                <p>Number of People: {{ booking.number_of_people }}</p>
                             </div>
                         </div>
                     </div>
+                </div>
+                {%endfor%}
+            </div>
+        </div>
+    </div>
 </section>
 
 

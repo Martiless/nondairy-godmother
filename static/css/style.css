@@ -265,6 +265,25 @@ hr {
 }
 
 
+/* My Bookings */ 
+
+.my_bookings_container {
+    width: 800px;
+    height: auto;
+    padding-left: 137px;
+    border-style: solid;
+    border-color: #ffffff;
+    color: #ffffff;
+    background-color: rgba(50, 134, 58, .5);
+    border-width: 1px;
+    margin: auto;
+}
+
+.card {
+    color: #32863A;
+}
+
+
 
 /*Thank you page*/
 

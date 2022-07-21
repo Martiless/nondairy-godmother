@@ -79,11 +79,10 @@ class ListBookingView(generic.DetailView):
 
     def get(self, request, *args, **kwargs):
         if request.user.is_authenticated:
-            booking = Booking.objects.filter(user=request.user)
-            my_bookings = filter(self, booking)
+            bookings = Booking.objects.filter(user=request.user)
 
             return render(request, 'my_bookings.html', {
-                'my_bookings': my_bookings
+                'bookings': bookings
             }
             )
         else:

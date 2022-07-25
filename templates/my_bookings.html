@@ -19,7 +19,7 @@
                                 <p>Location: {{booking.table}}</p>
                                 <p>Occasion: {{booking.occasion}}</p>
                             </div>
-                            <a href="{% url 'bookingsystem:edit_bookings' %}" class="btn btn-success">Edit</a>
+                            <a href="/edit_bookings/{{booking.id}}" class="btn btn-success">Edit</a>
                             <a href="#" class="btn btn-success">Cancel</a>
                         </div>
                     </div>

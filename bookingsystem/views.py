@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.views import generic
 from django.views.generic.edit import FormView
 from .forms import OnlineForm
@@ -89,12 +89,21 @@ class ListBookingView(generic.DetailView):
             return redirect('account_login')
 
 
-class EditBookingsView(FormView):
-
-
+class EditBookings(FormView):
+    model = Booking
     template_name = 'edit_bookings.html'
     form_class = OnlineForm
     success_url = '/my_bookings/'
 
-    def edit_bookings(request, booking_id):
-        return render(request, 'edit_bookings.html')
+    def edit_booking_view(self, request, booking_id):
+        booking = get_object_or_404(Booking, id=booking_id)
+        if request.method == 'POST':
+            form = OnlineForm(data=request.POST, instance=booking)
+            if form.is_valid():
+                form.save()
+                return redirect('my_bookings.html')
+        form = OnlineForm(instance=booking)
+
+        return render(request, 'edit_bookings.html', {
+            'form': form
+        })

@@ -36,6 +36,8 @@ OCCASION_CHOICE = (
     ('Confirmation', 'CONFIRMATION'),
     ('Christening', 'CHRISTENING'),
     ('Date Night', 'DATE NIGHT'),
+    ('Friends Night', 'FRIENDS NIGHT'),
+    ('None', 'None'),
 )
 
 

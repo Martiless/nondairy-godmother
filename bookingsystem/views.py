@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404, reverse
 from django.views import generic
 from django.views.generic.edit import FormView
 from .forms import OnlineForm
@@ -96,14 +96,13 @@ def edit_booking_view(request, booking_id):
         if form.is_valid():
             form.save()
             return redirect('my_bookings.html')
-        form = OnlineForm(instance=booking)
+    form = OnlineForm(instance=booking)
 
     return render(request, 'edit_bookings.html', {
         'form': form
     })
 
     
-
 def delete_booking(request, booking_id):
     booking = get_object_or_404(Booking, id=booking_id)
     booking.delete()

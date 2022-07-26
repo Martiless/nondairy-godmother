@@ -89,21 +89,22 @@ class ListBookingView(generic.DetailView):
             return redirect('account_login')
 
 
-class EditBookings(FormView):
-    model = Booking
-    template_name = 'edit_bookings.html'
-    form_class = OnlineForm
-    success_url = '/my_bookings/'
-
-    def edit_booking_view(self, request, booking_id):
-        booking = get_object_or_404(Booking, id=booking_id)
-        if request.method == 'POST':
-            form = OnlineForm(data=request.POST, instance=booking)
-            if form.is_valid():
-                form.save()
-                return redirect('my_bookings.html')
+def edit_booking_view(request, booking_id):
+    booking = get_object_or_404(Booking, id=booking_id)
+    if request.method == 'POST':
+        form = OnlineForm(data=request.POST, instance=booking)
+        if form.is_valid():
+            form.save()
+            return redirect('my_bookings.html')
         form = OnlineForm(instance=booking)
 
-        return render(request, 'edit_bookings.html', {
-            'form': form
-        })
+    return render(request, 'edit_bookings.html', {
+        'form': form
+    })
+
+    
+
+def delete_booking(request, booking_id):
+    booking = get_object_or_404(Booking, id=booking_id)
+    booking.delete()
+    return redirect('my_bookings.html')

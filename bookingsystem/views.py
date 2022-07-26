@@ -95,7 +95,7 @@ def edit_booking_view(request, booking_id):
         form = OnlineForm(data=request.POST, instance=booking)
         if form.is_valid():
             form.save()
-            return redirect('my_bookings.html')
+            return redirect('/')
     form = OnlineForm(instance=booking)
 
     return render(request, 'edit_bookings.html', {
@@ -106,4 +106,4 @@ def edit_booking_view(request, booking_id):
 def delete_booking(request, booking_id):
     booking = get_object_or_404(Booking, id=booking_id)
     booking.delete()
-    return redirect('my_bookings.html')
+    return redirect('/')

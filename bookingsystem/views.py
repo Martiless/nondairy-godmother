@@ -21,6 +21,10 @@ class Home(generic.DetailView):
 class BookingView(FormView):
     """
     Renders the Booking form page in the browser
+    Using the OnlineForm created in the forms.py file
+    When the booking form is completed and submitted 
+    the user is redirect to a thank you for booking 
+    message page.
     """
     template_name = 'bookings.html'
     form_class = OnlineForm
@@ -30,6 +34,8 @@ class BookingView(FormView):
         return render(request, 'bookings.html')
 
     def post(self, request):
+        """
+        """
         form = OnlineForm(data=request.POST)
         if form.is_valid():
             booking = form.save(commit=False)
@@ -91,11 +97,23 @@ class ListBookingView(generic.DetailView):
 
 
 def edit_booking_view(request, booking_id):
+    """
+    When a user is on the My Bookings page
+    which can only be accessed if you are 
+    logged in, they can click on the edit button. 
+    This will bring them to a new page, where the booking 
+    they wish to edit, located using the booking id,
+    appears, prepopulated with the current information.
+    Once the user clicks on the submit changes button
+    they will be redirected to the home page and a 
+    confimation message will appear.
+    """
     booking = get_object_or_404(Booking, id=booking_id)
     if request.method == 'POST':
         form = OnlineForm(data=request.POST, instance=booking)
         if form.is_valid():
             form.save()
+            # Pops up a message to the user when a booking is edited 
             messages.success(request, 'Your booking has been updated')
             return redirect('/')
     form = OnlineForm(instance=booking)
@@ -104,9 +122,18 @@ def edit_booking_view(request, booking_id):
         'form': form
     })
 
-    
+   
 def delete_booking(request, booking_id):
+    """
+    When a user is on the My Bookings page
+    which can only be accessed if you are 
+    logged in, they can click on the cancel booking
+    button. This will cancel the booking using its 
+    booking id, redirect the user back to the home page and 
+    pop up a confimation message will appear.
+    """
     booking = get_object_or_404(Booking, id=booking_id)
     booking.delete()
+    # Pops up a message to the user when a bookings is cancelled 
     messages.success(request, 'Your booking has been cancelled')
     return redirect('/')

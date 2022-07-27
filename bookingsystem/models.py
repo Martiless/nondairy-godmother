@@ -57,15 +57,26 @@ class Booking(models.Model):
     The rest of the information is saved for the booking
     """
 
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="user_bookings")
+    user = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name="user_bookings"
+        )
     name = models.CharField(max_length=60, null=True, blank=True)
     email_address = models.EmailField(null=True, blank=True)
     phone = models.IntegerField(null=True, blank=True)
-    number_of_people = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(10)], default='1', help_text='For parties of more than 10, please call us on 021 4569 782')
+    number_of_people = models.IntegerField(
+        validators=[MinValueValidator(1), MaxValueValidator(10)], default='1',
+        help_text='For parties of more than 10, please call us on 021 4569 782'
+        )
     date = models.DateField()
-    time = models.CharField(max_length=50, choices=TIME_CHOICE, default='12:00')
-    table = models.CharField(max_length=50, choices=TABLE_CHOICE, default='Inside')
-    occasion = models.CharField(max_length=100, choices=OCCASION_CHOICE, default='Birthday')
+    time = models.CharField(
+        max_length=50, choices=TIME_CHOICE, default='12:00'
+        )
+    table = models.CharField(
+        max_length=50, choices=TABLE_CHOICE, default='Inside'
+        )
+    occasion = models.CharField(
+        max_length=100, choices=OCCASION_CHOICE, default='Birthday'
+        )
 
     def __str__(self):
         return self.name

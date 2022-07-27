@@ -29,12 +29,3 @@ class OnlineForm(ModelForm):
         widgets = {
             'date': DateInput()
         }
-
-
-class EditBookingForm(forms.ModelForm):
-    class Meta:
-        model = Booking
-        fields = ['name', 'number_of_people', 'date', 'time']
-        widgets = {
-            'date': DateInput()
-        }

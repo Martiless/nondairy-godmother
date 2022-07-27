@@ -1,5 +1,6 @@
-from django.shortcuts import render, redirect, get_object_or_404, reverse
+from django.shortcuts import render, redirect, get_object_or_404
 from django.views import generic
+from django.contrib import messages
 from django.views.generic.edit import FormView
 from .forms import OnlineForm
 from .models import Booking
@@ -95,6 +96,7 @@ def edit_booking_view(request, booking_id):
         form = OnlineForm(data=request.POST, instance=booking)
         if form.is_valid():
             form.save()
+            messages.success(request, 'Your booking has been updated')
             return redirect('/')
     form = OnlineForm(instance=booking)
 
@@ -106,4 +108,5 @@ def edit_booking_view(request, booking_id):
 def delete_booking(request, booking_id):
     booking = get_object_or_404(Booking, id=booking_id)
     booking.delete()
+    messages.success(request, 'Your booking has been cancelled')
     return redirect('/')

@@ -35,6 +35,11 @@ class BookingView(FormView):
 
     def post(self, request):
         """
+        Uses the OnlineForm from forms.py
+        Checks if all the infromation in valid
+        and then saves it to the database.
+        Once saved users are redirected to the 
+        Thank you page
         """
         form = OnlineForm(data=request.POST)
         if form.is_valid():

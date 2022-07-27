@@ -11,7 +11,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--importing font awesome script-->
     <script src="https://kit.fontawesome.com/c415ee89f4.js" crossorigin="anonymous"></script>
-    <link rel="icon"href="{% static 'favicon.ico' %}">
+    <link rel="icon" href="{% static 'favicon.ico' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <title> The Non Dairy Godmother</title>
 </head>
@@ -56,75 +56,80 @@
             <div class="row">
                 <div class="col-md-8 offset-md-2">
                     {% for message in messages %}
-                    <div class="alert {{ message.tags }} alert-success alert-dismissable fade show" id="msg" role="alert">
+                    <div class="alert {{ message.tags }} alert-success alert-dismissible fade show" id="msg"
+                        role="alert">
                         {{ message | safe }}
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
-                          </button>
+                        </button>
                     </div>
                     {% endfor %}
                 </div>
             </div>
         </div>
-        </div>
+    </div>
 
 
-        <main class="flex-shrink-0 main-bg">
-            {% block content %}
-            <!-- Content Goes here -->
-            {% endblock content %}
-        </main>
+    <main class="flex-shrink-0 main-bg">
+        {% block content %}
+        <!-- Content Goes here -->
+        {% endblock content %}
+    </main>
 
-        <!--Footer section including social media and email-->
-        <section id="footer">
-            <footer class="container-fluid">
-                <div id="footer-details" class="row">
-                    <div class="col-sm-4">
-                        <h6 class="uppercase general-sub">Copyright 2022 &nbsp;<i class="fa fa-copyright" aria-hidden="true"></i></h6>
-                    </div>
-                    <div class="col-sm-4">
-                        <h5 class="uppercase general-sub"><i class="fa fa-door-open" aria-hidden="true"></i>&nbsp;Opening Hours:</h5>
-                        <p class="inline-block">
-                                Monday - Sunday
-                        </p>
-                        <p class="inline-block">
-                                12:00 - 21:00
-                            </p>
-                    </div>
-                    <div class="col-sm-4">
-                        <h5 class="uppercase general-sub">Social</h5>
-                        <ul class="list-inline social-links">
-                            <li class="list-inline-item">
-                                <a target="_blank" href="https://www.facebook.com">
-                                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                                    <span class="sr-only">Facebook</span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a target="_blank" href="https://www.instagram.com">
-                                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                                    <span class="sr-only">Instagram</span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a target="_blank" href="https://www.twitter.com">
-                                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                                    <span class="sr-only">Twitter</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+    <!--Footer section including social media and email-->
+    <section id="footer">
+        <footer class="container-fluid">
+            <div id="footer-details" class="row">
+                <div class="col-sm-4">
+                    <h6 class="uppercase general-sub">Copyright 2022 &nbsp;<i class="fa fa-copyright"
+                            aria-hidden="true"></i></h6>
                 </div>
-            </footer>
-        </section>
-        <!--Code taken for CI walkthrough project-->
-        <script>
-            setTimeout(function () {
-                let messages = document.getElementById('msg');
-                let alert = new bootstrap.Alert(messages);
-                alert.close();
-            }, 2000);
-        </script>
+                <div class="col-sm-4">
+                    <h5 class="uppercase general-sub"><i class="fa fa-door-open" aria-hidden="true"></i>&nbsp;Opening
+                        Hours:</h5>
+                    <p class="inline-block">
+                        Monday - Sunday
+                    </p>
+                    <p class="inline-block">
+                        12:00 - 21:00
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <h5 class="uppercase general-sub">Social</h5>
+                    <ul class="list-inline social-links">
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.facebook.com">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                <span class="sr-only">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.instagram.com">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                <span class="sr-only">Instagram</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.twitter.com">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                <span class="sr-only">Twitter</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script>
+        setTimeout(function () {
+            let messages = document.getElementById('msg');
+            let alert = new bootstrap.Alert(messages);
+            alert.close();
+        }, 2500);
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 
 </html>

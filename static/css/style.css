@@ -184,6 +184,10 @@ hr {
     font-weight: 300;
 }
 
+.menu_options {
+    color: #FFFFFF;
+}
+
 /* login page*/
 
 .login-image {

@@ -138,13 +138,98 @@ A lot of the imagery on this site was sourced from [Pexel](https://www.pexels.co
 There are several features on this site to help users get the most out of their visit to the site.  
 
 ### General:
-#### Header and Navigation:  
 
-![Header and Nav bar]()  
-#### Footer:  
+<details>
+<summary>Header and Nav Bar:</summary>
 
-![Social Media Icons]()
+![Header and Nav Bar](/static/documents/features_images/header_nav.png)
+</details>
+Each page has a Header and Navigation bar section, located at the top of the page. 
+The navigation bar consisted of links to a Book A Table page, a Newsletter page, a Log in page, a Register page and for authorised users a My Bookings, as well as a Home button that brings the user back to the landing page. The landing page can also be reached by clicking on the restaurant logo.
+
+&nbsp;
+
+<details>
+<summary>Footer Information:</summary>
+
+![Opening Hours & Social Media](/static/documents/features_images/footer.png)
+</details> 
+Each page also contains a footer element that consists of the restaurants social media accounts (Facebook, Twitter and Instagram), as well as the opening hours for the restaurant and copyright information. 
+
+&nbsp;
+
 ### Home page:
+The *Home* page contains the header and footer as mentioned above 
+
+<details>
+<summary>Main Area:</summary>
+
+![Main Area of Home Page](/static/documents/features_images/main_area.png)
+</details>
+The main focus on the *Home* page is the hero image, this is an image of the restaurant with a green overlay welcoming site visitors to the website. 
+
+&nbsp;
+
+### Menus Page:
+The next page on the site is the *Menu* page. This has all the header and footer feaurtes mentioned above.
+
+<details>
+<summary>Menu Options:</summary>
+
+![Menus](/static/documents/features_images/menus.png)
+</details>
+A visitor to the site can view the three menus available at the restaurant, that is, a Lunch Menu, a Dinner Menu and a Cocktails Menu. 
+Each menu can be viewed by clicking on the menu name or alternatively can be downloaded for viewing at a later point. 
+
+&nbsp;
+
+### Book A Table Page:
+Next up is the *Book A Table* page. Which has all the previously mentioned header and footer features. 
+
+<details>
+<summary>Booking Form:</summary>
+
+![Menus](/static/documents/features_images/book_a_table.png)
+</details> 
+Once a user has either logged into their account or created an account they will be able to view the booking form. 
+
+&nbsp;
+
+<details>
+<summary>Date Picker:</summary>
+
+![Menus](/static/documents/features_images/date_picked.jpg)
+</details>
+On the booking form the user has the option to pick the date they would like to make the bookings for. This can be done by either typing the date in the date section or by clicking on the little calendar in the corner of the box and popping out the date picker. 
+
+&nbsp;
+
+<details>
+<summary>Time Picker:</summary>
+
+![Menus](/static/documents/features_images/time_picked.jpg)
+</details>
+On the booking form the user has the option to pick the time they would like to make the bookings for. This is done by clicking on the dropdown menu of times and clicking on the time the user wishes to making the booking for. 
+
+&nbsp;
+
+<details>
+<summary>Location Picker:</summary>
+
+![Menus](/static/documents/features_images/location_picked.jpg)
+</details>
+On the booking form the user also has the option to pick where in the restaurant they would ideally like to site. This is done by clicking on the dropdown menu of locations and clicking on the users pefered location. 
+
+&nbsp;
+
+<details>
+<summary>Occasion Picker:</summary>
+
+![Menus](/static/documents/features_images/occasion_picked.jpg)
+</details>
+The user also has the option to provide the restaurant with a reason for making the booking, be it a birthday, night out with friends or no particular reason at all. This can be done by clicking on the dropdown menu and picking which occasion best suits the booking. 
+
+
 
 
 ## Future Features:

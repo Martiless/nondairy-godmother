@@ -1,6 +1,6 @@
 from django.forms import ModelForm
 from django import forms
-from .models import Booking
+from .models import Booking, SignUp
 
 
 class DateInput(forms.DateInput):
@@ -29,3 +29,17 @@ class OnlineForm(ModelForm):
         widgets = {
             'date': DateInput()
         }
+
+class SignUpForm(ModelForm):
+    """
+    This form is connected with the Signup view
+    so that visiters to the site can sign up 
+    for the restaurants newsletter
+    """
+    class Meta:
+        """Defines which model to pull the
+        fields from"""
+        model = SignUp
+        # Tell the form to use all the fields provided
+        fields = '__all__'
+       

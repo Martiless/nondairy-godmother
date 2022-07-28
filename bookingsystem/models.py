@@ -51,7 +51,7 @@ TABLE_CHOICE = (
 
 class Booking(models.Model):
     """
-    Model to be used in the forms.py and views.py.
+    Model to be used in the forms.py and views.py for the booking form.
     It uses the User Foreign Key so that each book will be associated with a
     specific user.
     The rest of the information is saved for the booking
@@ -80,3 +80,20 @@ class Booking(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class SignUp(models.Model):
+    """
+    Model to be used in the forms.py for the sign up to newsletter in the footer
+    of each page a user goes onto.
+    It uses the User Foreign Key so that each book will be associated with a
+    specific user.
+    The rest of the information is saved for the booking
+    """
+
+    first_name = models.CharField(max_length=60, null=True, blank=True)
+    last_name = models.CharField(max_length=60, null=True, blank=True)
+    email_address = models.EmailField(null=True, blank=True)
+
+    def __str__(self):
+        return self.first_name

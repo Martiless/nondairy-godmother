@@ -103,10 +103,9 @@ header {
     text-transform: uppercase;
     letter-spacing: 5px;
     text-align: center;
-    width: 700px;
+    width: auto;
     height: 600px;
     padding-top: 40px;
-    margin-left: 500px;
     border-style: solid;
     border-color: #ffffff;
     border-width: 1px;
@@ -306,6 +305,7 @@ hr {
     padding: 0 25;
 }
 
+
 /* Media Quiries */ 
 @media screen and (max-width: 1300px) {
     .container{
@@ -333,9 +333,7 @@ hr {
     }
 
     .menu_container {
-        width: auto;
         height: auto;
-        margin-left: auto;
 
     }
 

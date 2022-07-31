@@ -48,6 +48,21 @@ TABLE_CHOICE = (
     ('Booth', 'BOOTH'),
 )
 
+NUMBER_OF_PEOPLE_CHOICE = (
+    ('1', '1'),
+    ('2', '2'),
+    ('3', '3'),
+    ('4', '4'),
+    ('5', '5'),
+    ('6', '6'),
+    ('7', '7'),
+    ('8', '8'),
+    ('9', '9'),
+    ('10', '10'),
+
+)
+
+
 
 class Booking(models.Model):
     """
@@ -63,9 +78,8 @@ class Booking(models.Model):
     name = models.CharField(max_length=60, null=True, blank=True)
     email_address = models.EmailField(null=True, blank=True)
     phone = models.IntegerField(null=True, blank=True)
-    number_of_people = models.IntegerField(
-        validators=[MinValueValidator(1), MaxValueValidator(10)], default='1',
-        help_text='For parties of more than 10, please call us on 021 4569 782'
+    number_of_people = models.CharField(max_length=2, choices=NUMBER_OF_PEOPLE_CHOICE, default='1',
+        help_text='<br> For parties of more than 10, please call us on 021 4569 782'
         )
     date = models.DateField()
     time = models.CharField(
@@ -84,8 +98,8 @@ class Booking(models.Model):
 
 class SignUp(models.Model):
     """
-    Model to be used in the forms.py for the sign up to newsletter in the footer
-    of each page a user goes onto.
+    Model to be used in the forms.py for the sign up to newsletter 
+    in the footer of each page a user goes onto.
     It uses the User Foreign Key so that each book will be associated with a
     specific user.
     The rest of the information is saved for the booking

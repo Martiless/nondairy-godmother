@@ -34,7 +34,7 @@ header {
 #hero-image {
     min-height: 100%;
     width: 100%;
-    background: url('/static/images/restaurant_image.jpg') no-repeat 95% 50%;
+    background: url('https://res.cloudinary.com/martiless/image/upload/v1658244477/static/images/restaurant_image.c66f71e91b26.jpg') no-repeat 95% 50%;
     background-size: cover;
     
 
@@ -93,7 +93,7 @@ header {
 
 
 .background-image {
-    background-image: url('/static/images/main_image_min.jpg');
+    background-image: url('https://res.cloudinary.com/martiless/image/upload/v1658244482/static/images/main_image_min.ea131faefecf.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -103,9 +103,13 @@ header {
     text-transform: uppercase;
     letter-spacing: 5px;
     text-align: center;
-    width: auto;
+    width: 700px;
     height: 600px;
     padding-top: 40px;
+    margin-left: 500px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px;
     background-color: rgba(50, 134, 58, .7);
     position: sticky;
 }
@@ -152,7 +156,7 @@ hr {
 /* login page*/
 
 .login-image {
-    background-image: url('/static/images/salad_bowl.jpg');
+    background-image: url('https://res.cloudinary.com/martiless/image/upload/v1658244478/static/images/salad_bowl.f814acf57219.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -176,7 +180,7 @@ hr {
 /* register page*/
 
 .register-image {
-    background-image: url('/static/images/pizza_image_min.jpg');
+    background-image: url('https://res.cloudinary.com/martiless/image/upload/v1658244481/static/images/pizza_image_min.7650b9fe6437.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -199,7 +203,7 @@ hr {
 /* booking page */
 
 .book_a_table {
-    background-image: url('/static/images/restaurant_image.jpg');
+    background-image: url('https://res.cloudinary.com/martiless/image/upload/v1658244477/static/images/restaurant_image.c66f71e91b26.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -256,7 +260,7 @@ hr {
 #thank-you-image {
     height: 600px;
     width: 100%;
-    background: url('/static/images/bowl_of_fruit.jpg') center, center;
+    background: url('https://res.cloudinary.com/martiless/image/upload/v1658244483/static/images/bowl_of_fruit.f931d0309a9e.jpg') center, center;
     
 
 
@@ -328,6 +332,13 @@ hr {
         width: auto;
     }
 
+    .menu_container {
+        width: auto;
+        height: auto;
+        margin-left: auto;
+
+    }
+
 }
 
 /* Media queries for mobile */
@@ -361,7 +372,6 @@ hr {
     }
 
     .menu_container {
-        height: auto;
         padding-top: 0px;
         padding-bottom: 75px;
 

@@ -1,6 +1,5 @@
 from django.db import models
 from django.contrib.auth.models import User
-from django.core.validators import MaxValueValidator, MinValueValidator
 
 
 # The choice which are presented to people making bookings
@@ -63,7 +62,6 @@ NUMBER_OF_PEOPLE_CHOICE = (
 )
 
 
-
 class Booking(models.Model):
     """
     Model to be used in the forms.py and views.py for the booking form.
@@ -79,8 +77,7 @@ class Booking(models.Model):
     email_address = models.EmailField(null=True, blank=True)
     phone = models.IntegerField(null=True, blank=True)
     number_of_people = models.CharField(max_length=2, choices=NUMBER_OF_PEOPLE_CHOICE, default='1',
-        help_text='<br> For parties of more than 10, please call us on 021 4569 782'
-        )
+        help_text='<br> For parties of more than 10, please call us on 021 4569 782')
     date = models.DateField()
     time = models.CharField(
         max_length=50, choices=TIME_CHOICE, default='12:00'

@@ -158,7 +158,7 @@ To make sure text could be seen without issue on my chosen colors I used [Coolor
 
 ### Images:
 
-A lot of the imagery on this site was sourced from [Pexel](https://www.pexels.com/) with some real-life images too.  
+A lot of the imagery on this site was sourced from [Pexel](https://www.pexels.com/).  
 
 
 ***

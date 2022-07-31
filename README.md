@@ -37,16 +37,29 @@ This website has been created as the Fourth Milestone project for Code Institute
 ## Site Goals:
 
 The goals for this site are as follows:
-* 
+* Allow users to making a booking at the restaurant
+* Allow users to edit or cancel their booking
+* Allow users to sign up for a monthly newsletter
+* Allow the restaurant owner to collect a database of customer who have booked with them 
+* Allow the restaurant owner to collect a database from marketing purposes in the form of a monthly newsletter
 
 ## UX:
 
 ### User stories:
 #### New User:  
-*  
+* As a new user I want to book a table at Non-Dairy Godmother restaurant
+* As a new user I want to pick the time, date, number of people for the booking
+* As a new user I also want to the option to pick the occasion and area I would like to site
+* As a new user I want to be able to view menus
+* As a new user I want to be able to log in to edit or cancel my booking 
+* As a new user I want to be able to sign up for the restaurants monthly newsletter
 
 #### Returning User:
-* 
+* As a returning user I want to log in to my account
+* As a returning user I want to book a table at Non-Dairy Godmother restaurant
+* As a returning user I want to view my bookings 
+* As a returning user I want to be able to edit or cancel my bookings 
+* As a returning user I want to see if the menus have been updated
 
 ## Development Planes:
 To create a website that is comprehensive and informative for a user, as a developer you need to look at all aspects of the website and how someone who visits your website will use it. You have to consider all the user stories that have been outlined in the above sections.  
@@ -58,30 +71,48 @@ The strategy principal looks at user needs, as well product/service objectives. 
 * Existing User  
 
 ### Demographic:
-* 
+* People aged between 16 - 40 years
+* Working indiviuals with disposable income 
 
 ### Psychographic:
 #### Lifestyle:
-*  
+* People who follow a Vegan diet
+* People who like eating out
+
 #### Values:
-*  
+* Reducing the amount of animal products being used
+* Environmentally Conscious
 
 #### The website needs to allow users to:  
-*   
+* Make a booking
+* Log into their account 
+* Edit a booking
+* Cancel a booking 
+* Sign up to a newsletter
 
 
 #### The website needs to allow the restaurant owner to:  
-*   
+* Collect information about their customer
+* Track bookings that are coming into the restaurant 
+* Manage the number of people per table via the booking model    
 
 ## Scope:  
 
 With the structure in place, it was then time to move onto the scope plane. This was all about developing website requirements based on the goals set out in the strategy plane. These requirements are broken down into two categories. 
 ### Content Requirements:
 1. The user will be looking for:
-      * 
+      * Location of the restaurant
+      * Menus 
+      * Opening Times
+
 ### Functionality Requirements:
 1. The user will be able to:
-      * 
+      * Book at table at a certain time and date
+      * Choose the number of people for the booking 
+      * Choose the occasion and their prefered location in the restaurant
+      * Edit bookings 
+      * Cancel bookings 
+      * Sign up for a newsletter
 
 
 ## Structure:
@@ -95,7 +126,7 @@ The information above was then used to create a structure for the website. Below
 
 
 ## Skeleton:
-[Wireframes](/static/documents/wireframes/WIREFRAMES.MD) were created to set out the initial appearance of the website while also making sure to keep the end-user in mind at all times. Wireframes were created using [Balsamiq](https://balsamiq.com/).  
+[Wireframes](/static/documents/WIREFRAMES.MD) were created to set out the initial appearance of the website while also making sure to keep the end-user in mind at all times. Wireframes were created using [Balsamiq](https://balsamiq.com/).  
 
 ## Surface:
 [Please see the live site here]()  

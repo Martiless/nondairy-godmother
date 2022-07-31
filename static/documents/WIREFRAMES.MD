@@ -51,5 +51,7 @@ As you can see the finished project is slightly different from the original mock
 
 ![Sign Up Page](https://res.cloudinary.com/martiless/image/upload/v1658244446/static/documents/wireframes/sign_up_page.ba2bc0951022.png)
 </details>
+
 <br>
-Click [here](/README.md) to go back to the README doc
+
+Click [here](/README.md) to get back to README.doc

@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
 a {
-    color: #32863A;
+    color: #ffc107;
 }
 
 /* Header */
@@ -225,7 +225,8 @@ hr {
     padding-left: 170px;
     border-style: solid;
     border-color: #ffffff;
-    background-color: rgba(255, 255, 255, 0.788);
+    color: #ffffff;
+    background-color: rgba(50, 134, 58, .5);
     border-width: 1px;
     margin-left: 450px;
     text-align: center;
@@ -289,12 +290,6 @@ hr {
 
 /*Thank you page*/
 
-.link {
-    color: #FFFFFF;
-
-
-}
-
 #thank-you-image {
     height: 600px;
     width: 100%;
@@ -325,7 +320,7 @@ hr {
     background-color: rgba(50, 134, 58, .7);
     bottom: 325px;
     right: 500px;
-    position: absolute;
+    position: sticky;
 }
 /* Footer */
 
@@ -346,6 +341,17 @@ hr {
 
 /* Media Quiries */ 
 @media screen and (max-width: 1300px) {
+    .container{
+        height: auto;
+
+    }
+    .square-container {
+        width: auto;
+        height: auto;
+        padding-left: 0px;
+        margin-left: 0px;
+}
+    
 
 }
 /* Media quiries for tablet sized screens */
@@ -354,6 +360,11 @@ hr {
         bottom: 270px;
         right: 0px;
     }
+
+    .login_container {
+        width: auto;
+    }
+
 }
 
 /* Media queries for mobile */
@@ -363,13 +374,28 @@ hr {
         height: auto;
         padding-top: 10px;
     }
+
+    .login_container {
+        height: auto;
+        padding-left: 65px;
+        padding-top: 50px;
+    }
+
+    .container{
+        padding-left: 0px;
+    }
+
+    .booking_container {
+        width: auto;
+        padding-left: 100px;
+        padding-right: 85px;
+    }
+
+    .my_bookings_container {
+        width: auto;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+
 }
-
-
-/* Media quiries for small mobile devices */
-
-@media screen and (max-width:350px) {
-   
-    
-}
-

@@ -59,7 +59,7 @@ header {
     text-transform: uppercase;
     letter-spacing: 5px;
 
-    width: 950px;
+    width: auto;
     height: 160px;
 
     padding-top: 40px;
@@ -69,7 +69,7 @@ header {
     bottom: 325px;
     right: 500px;
 
-    position: absolute
+    position: sticky
 }
 
 #cover-text, #cover-text h2 {
@@ -342,5 +342,34 @@ hr {
 .col-sm-4 {
     text-align: center;
     padding: 0 25;
+}
+
+/* Media Quiries */ 
+@media screen and (max-width: 1300px) {
+
+}
+/* Media quiries for tablet sized screens */
+@media screen and (max-width: 950px) {
+    #cover-text {
+        bottom: 270px;
+        right: 0px;
+    }
+}
+
+/* Media queries for mobile */
+
+@media screen and (max-width:650px) {
+    #cover-text {
+        height: auto;
+        padding-top: 10px;
+    }
+}
+
+
+/* Media quiries for small mobile devices */
+
+@media screen and (max-width:350px) {
+   
+    
 }
 

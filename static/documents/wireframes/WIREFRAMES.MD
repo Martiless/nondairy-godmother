@@ -9,7 +9,7 @@ As you can see the finished project is slightly different from the original mock
 <details>
 <summary>Home Page</summary>
 
-![Home Page](/static/documents/wireframes/home_page.png)
+![Home Page](https://res.cloudinary.com/martiless/image/upload/v1658244447/static/documents/wireframes/home_page.595ed1e3a524.png)
 </details>
 
 ***
@@ -17,7 +17,7 @@ As you can see the finished project is slightly different from the original mock
 <details>
 <summary>Menu Page</summary>
 
-![Menu Page](/static/documents/wireframes/menus.png)
+![Menu Page](https://res.cloudinary.com/martiless/image/upload/v1658244449/static/documents/wireframes/menus.549ebc070fb2.png)
 </details>
 
 ***
@@ -25,7 +25,7 @@ As you can see the finished project is slightly different from the original mock
 <details>
 <summary>Book A Table</summary>
 
-![Book A Table](/static/documents/wireframes/book_a_table.png)
+![Book A Table](https://res.cloudinary.com/martiless/image/upload/v1658244447/static/documents/wireframes/book_a_table.5cceb01ab380.png)
 </details>
 
 ***
@@ -33,7 +33,7 @@ As you can see the finished project is slightly different from the original mock
 <details>
 <summary>Thank You Message</summary>
 
-![Thank You Message](/static/documents/wireframes/thank_you_message.png)
+![Thank You Message](https://res.cloudinary.com/martiless/image/upload/v1658244449/static/documents/wireframes/thank_you_message.d9bb5bdea9aa.png)
 </details>
 
 ***
@@ -41,7 +41,7 @@ As you can see the finished project is slightly different from the original mock
 <details>
 <summary>Login Page</summary>
 
-![Login Page](/static/documents/wireframes/login_page.png)
+![Login Page](https://res.cloudinary.com/martiless/image/upload/v1658244448/static/documents/wireframes/login_page.43b6845618df.png)
 </details>
 
 ***
@@ -49,7 +49,7 @@ As you can see the finished project is slightly different from the original mock
 <details>
 <summary>Sign Up Page</summary>
 
-![Sign Up Page](/static/documents/wireframes/sign_up_page.png)
+![Sign Up Page](https://res.cloudinary.com/martiless/image/upload/v1658244446/static/documents/wireframes/sign_up_page.ba2bc0951022.png)
 </details>
-
+<br>
 Click [here](/README.md) to go back to the README doc

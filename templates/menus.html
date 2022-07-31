@@ -3,36 +3,39 @@
 {% block content %}
 
 <section id="menus" class="background-image">
+    <div class="menu_container">
         <h2 id="check-out-our-menus">Check out our menus</h2>
-        <div id="lunch-menu">
-            <div class="lunch-menu circle-container">
-                <h2><a href="/static/documents/lunch_menu.pdf" target="_blank" rel="noopner" class="menu_options">Lunch Menu <i class="fas fa-salad"></i></a></h2>
-                <hr>
-                <p> <a href="/static/documents/lunch_menu.pdf" target="_blank" rel="noopner" class="download-button"
-                        aria-label="Download lunch menu (open in new tab)">Download our Lunch Menu Here <i
-                            class="fas fa-file-pdf"></i></a></p>
-            </div>
-        </div>
-        <div id="cocktail-menu">
-            <div class="cocktail-menu circle-container">
-                <h2><a href="/static/documents/cocktail_menu.pdf" target="_blank" rel="noopner" class="menu_options">Cocktail Menu <i class="fa-solid fa-cake-slice"></i></a></h2>
-                <hr>
-                <p> <a href="/static/documents/cocktail_menu.pdf" target="_blank" rel="noopner" class="download-button"
-                        aria-label="Download lunch menu (open in new tab)">Download our Cocktail Menu Menu Here <i
-                            class="fas fa-file-pdf"></i></a></p>
-            </div>
-        </div>
-        <div id="dinner-menu">
-            <div class="dinner-menu circle-container">
-                <h2><a href="/static/documents/dinner_menu.pdf" target="_blank" rel="noopner" class="menu_options">Dinner Menu <i class="fa-solid fa-pot-food"></i</a></h2>
-                <hr>
-                <p> <a href="/static/documents/dinner_menu.pdf" target="_blank" rel="noopner" class="download-button"
-                        aria-label="Download lunch menu (open in new tab)">Download our Dinner Menu Here <i
-                            class="fas fa-file-pdf"></i></a></p>
-            </div>
-        </div>
+        <br>
+        <p>
+            <h2><i class="fa fa-plate-wheat"></i><a href="/static/documents/lunch_menu.pdf" target="_blank" rel="noopner" class="menu_options">Lunch
+                    Menu</a></h2>
+            <p> <a href="/static/documents/lunch_menu.pdf" target="_blank" rel="noopner" class="download-button"
+                    aria-label="Download lunch menu (open in new tab)">Download our Lunch Menu Here <i
+                        class="fas fa-file-pdf"></i></a></p>
+        </p>
+        <hr>
+        <p>
+            <i class="fa-solid fa-burger"></i>
+            <h2><a href="/static/documents/dinner_menu.pdf" target="_blank" rel="noopner" class="menu_options">Dinner
+                    Menu</a>
+            </h2>
+            <p> <a href="/static/documents/dinner_menu.pdf" target="_blank" rel="noopner" class="download-button"
+                    aria-label="Download lunch menu (open in new tab)">Download our Dinner Menu Here <i
+                        class="fas fa-file-pdf"></i></a></p>
+        </p>
+        <hr>
+        <p>
+            <i class="fa fa-martini-glass-citrus"></i>
+            <h2><a href="/static/documents/cocktail_menu.pdf" target="_blank" rel="noopner"
+                    class="menu_options">Cocktail Menu <i class="fa-solid fa-cake-slice"></i></a></h2>
+            <p> <a href="/static/documents/cocktail_menu.pdf" target="_blank" rel="noopner" class="download-button"
+                    aria-label="Download lunch menu (open in new tab)">Download our Cocktail Menu Menu Here <i
+                        class="fas fa-file-pdf"></i></a></p>
+        </p>
 
-    
+    </div>
+
+
 </section>
 
 {%endblock%}

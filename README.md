@@ -278,7 +278,7 @@ We are looking to see if we have met all the goals we set out.
 ***
 
 ## Testing:
-Testing information can be viewed [here]( "Link to testing information")
+Testing information can be viewed [here](/static/documents/TESTING.md)
 
 ***
 
@@ -323,6 +323,8 @@ Testing information can be viewed [here]( "Link to testing information")
       * In my view I had created a variable called my_bookings and then used this as the context in my view.
       * In the my_bookings.html page I had created a for loop with the intention of looping through the bookings of a authorised user and display them for editing or cancelling. However, in creating this for loop I had used the wrong variable. The context in my views.py file was "my_bookings" where as in the loop I had used "for booking in bookings" There for there was a context/template mismatch. 
       * Once I removed the line of code in the view.py file which includede the "my_bookings" variable as it was irelevent and changed the context to bookings (as this was the query that was filtering the users bookings) the bookings appear on the "My Bookings" page of the site. 
+
+1. During the testing stage it was discover that both the Newsletter form and the Book a Table form had elements of it that were not showing up as being a required field. After a quick search I found that I needed to provide each field with a handle that checks if the field is required. I also added lables for each of these required fields, along with placeholders.  
 
 
 ***

@@ -47,6 +47,7 @@ The goals for this site are as follows:
 
 ### User stories:
 #### New User:  
+* As a new user I want to register so I can make a booking 
 * As a new user I want to book a table at Non-Dairy Godmother restaurant
 * As a new user I want to pick the time, date, number of people for the booking
 * As a new user I also want to the option to pick the occasion and area I would like to site
@@ -153,7 +154,7 @@ To make sure text could be seen without issue on my chosen colors I used [Coolor
 
 
 ### Font:
-
+The font used for this project was Lora. This was imported from Google fonts and had a backup font of Sans Serif
  
 
 ### Images:
@@ -258,13 +259,17 @@ On the booking form the user also has the option to pick where in the restaurant
 
 ![Menus](/static/documents/features_images/occasion_picked.jpg)
 </details>
-The user also has the option to provide the restaurant with a reason for making the booking, be it a birthday, night out with friends or no particular reason at all. This can be done by clicking on the dropdown menu and picking which occasion best suits the booking. 
+The user also has the option to provide the restaurant with a reason for making the booking, be it a birthday, night out with friends or no particular reason at all. This can be done by clicking on the dropdown menu and picking which occasion best suits the booking.    
 
-
-
+&nbsp;
 
 ## Future Features:
-* 
+Some future features I would like for this app are:
+* Aviod over bookings - a backend feature that filters through all the bookings at a certain time and makes sure that the number of bookings does not exceed the number of available seats
+* Dinner Club Login - where members can see special offer that are only for members
+* A Review page - this is a page where users can view reviews from previous diners but can also leave their own review on the restaurant
+* Gallery page - which would be linked to the restaurants Instagram account 
+* A shop - where users can buy vouchers, in house wines, oils, dressings, etc
 
 ***
 [Back to top](##Non-dairy-Godmother)  
@@ -272,8 +277,33 @@ The user also has the option to provide the restaurant with a reason for making 
 ## User Stories Met:
 This section is to look back at the User stories we established during the strategy phase of the project. 
 We are looking to see if we have met all the goals we set out. 
-#### New User:  
-* 
+#### New User: 
+* As a new user I want to register so I can make a booking
+**Met on the Book a Table Page**
+* As a new user I want to book a table at Non-Dairy Godmother restaurant
+**Met on the Book a Table Page**
+* As a new user I want to pick the time, date, number of people for the booking
+**Met on the Book form on the Book a Table page**
+* As a new user I also want to the option to pick the occasion and area I would like to site
+**Met on the Book form on the Book a Table page**
+* As a new user I want to be able to view menus
+**Met on the Menus page, users can view three menus for the restaurant**
+* As a new user I want to be able to log in to edit or cancel my booking
+**Met on the My Bookings page once the user is logged in**
+* As a new user I want to be able to sign up for the restaurants monthly newsletter
+**Met on the Newsletter page**
+
+#### Returning User:
+* As a returning user I want to log in to my account
+**Met on the the Log in page**
+* As a returning user I want to book a table at Non-Dairy Godmother restaurant
+**Met on the Book a Table Page**
+* As a returning user I want to view my bookings 
+**Met on the My Bookings page once the user is logged in**
+* As a returning user I want to be able to edit or cancel my bookings
+**Met on the My Bookings page once the user is logged in**
+* As a returning user I want to see if the menus have been updated
+**Met on the Menus page**
 
 ***
 
@@ -347,6 +377,7 @@ For the purpose of this project, the following technologies were used.
 * Bootstrap
 
 #### Google Font
+* Googel Font was used to import the choosen font for this project Lora.
 
 #### Font Awesome
 * Font Awesome was used on each page of the website to provide icons for UX purposes.  

@@ -118,7 +118,7 @@ def edit_booking_view(request, booking_id):
         form = OnlineForm(data=request.POST, instance=booking)
         if form.is_valid():
             form.save()
-            # Pops up a message to the user when a booking is edited 
+            # Pops up a message to the user when a booking is edited
             messages.success(request, 'Your booking has been updated')
             return redirect('/')
     form = OnlineForm(instance=booking)

@@ -28,9 +28,9 @@ class OnlineForm(ModelForm):
     )
 
     email_address = forms.EmailField(
-        label='Email Adress',
+        label='Email Address',
         required=True,
-        widget=forms.TextInput(attrs={'placeholder': 'Email Adress'}),
+        widget=forms.TextInput(attrs={'placeholder': 'Email Address'}),
     )
 
     phone = forms.IntegerField(

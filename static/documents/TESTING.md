@@ -80,12 +80,14 @@ When a user moves to the Book A Table page they will be met with a form with 8 e
 
 ### User Feedback:
 #### Home page image:
-Original image on the home page did not give users the impression that they had landed on a restaurants website but more a cooking blog. After this feedback the homepage image was changed to make the site look like a restaurant website from the minute you land on it.
+Original image on the home page did not give users the impression that they had landed on a restaurants website but more a cooking blog. After this feedback the homepage image was changed to make the site look like a restaurant website from the minute you land on it.  
+
 <details>
 <summary>Original Home page image</summary>
 
 ![Original Home Page Image](https://res.cloudinary.com/martiless/image/upload/v1658244483/static/images/bowl_of_fruit.f931d0309a9e.jpg)
-</details>
+</details>  <br>
+
 
 #### Spacing on the pages:
 There was originally a white gap between the navigation bar and the main image on each page. After receiving user feedback that this looked like it wasn't meant to be there, it was removed from each page. The navigation bar and the main image now sit perfectly next to each other on each page. The white space still appears but only when a message is popping up.

@@ -32,8 +32,10 @@ On the menus page the user has the option to view the restaurant menus or downlo
 
 
 ### Newsletter: 
-During the testing of the Newsletter page it was discovered that the form could be submitted without any information on it. This needed to be addresssed before deploying of the project. 
-*(Please refer to the Bugs section of the [README] (/README.md) for more information)*
+During the testing of the Newsletter page it was discovered that the form could be submitted without any information on it. This needed to be addresssed before deploying of the project.
+
+*(Please refer to the Bugs section of the [README](/README.md) for more information)*
+
 Once this issue was sorted testing of the Newsletter form was able to continue. The checks were as follows:
 * Click on the 'Submit' button without entering any details, this will cause an error message to appear staing "Please fill out this field". This message will appear each time the user tries to submit the form without filling out any of the fields in the form. 
 * Once the user has filled out all the fields in the form and clicked on the submit button they will be directed back to the home page where a message will pop up "Thank you for signing up to our newsletter"
@@ -53,9 +55,22 @@ During testing of the Register page, it was noted that when the password message
 
 
 ### Log In:
-The Log in page 
+The Log in page is a simple test, there was just two elements on the page that needs to be tested. These checks are as follows:
+* Try clicking on the 'Submit' button without entering any details in the log in form, this will cause an error message to appear staing "Please fill out this field". This message will appear each time the user tries to submit the form without filling out any of the fields in the form. 
+* If the user attempts to log in with an incorrect username or password they will get the following message "The username and/or password you specified are not correct."
+* Once the user has enter the correct username and password they now have the option to tick the 'remember me' box which will keep them logged in on their browser. 
+* Clicking on the 'Log In' button redirects the user back to the home page.
 
 ### Book A Table:
+When a user moves to the Book A Table page they will be met with a form with 8 elements on it
+1. Booking Name
+1. Email Address
+1. Contact Number
+1. Number of People
+1. Date
+1. Time
+1. Table
+1. Occasion 
 
 ### My Bookings
 
@@ -64,3 +79,16 @@ The Log in page
 ### Thank you Page:
 
 ### User Feedback:
+#### Home page image:
+Original image on the home page did not give users the impression that they had landed on a restaurants website but more a cooking blog. After this feedback the homepage image was changed to make the site look like a restaurant website from the minute you land on it.
+<details>
+<summary>Original Home page image</summary>
+
+![Original Home Page Image](https://res.cloudinary.com/martiless/image/upload/v1658244483/static/images/bowl_of_fruit.f931d0309a9e.jpg)
+</details>
+
+#### Spacing on the pages:
+There was originally a white gap between the navigation bar and the main image on each page. After receiving user feedback that this looked like it wasn't meant to be there, it was removed from each page. The navigation bar and the main image now sit perfectly next to each other on each page. The white space still appears but only when a message is popping up.
+
+#### Time out of message:
+When a user does just about anything on the site a message will appear to confirm their action. The time out on this was origianlly 2.5seconds. After receiving user feedback it was noted that these messages dissapear too quickly and were hard to read. The time out was increased to 4seconds to combat this. 

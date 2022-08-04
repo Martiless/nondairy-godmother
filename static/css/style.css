@@ -5,6 +5,12 @@ a {
     color: #ffc107;
 }
 
+.stroke {
+    text-shadow: -1px 1px 0 #000,
+				  1px 1px 0 #000,
+				 1px -1px 0 #000;
+}
+
 /* Header */
 
 header {
@@ -137,25 +143,11 @@ hr {
     color: #FFFFFF;
 }
 
-.fa-plate-wheat{
-    font-size: x-large;
-    color: #FFFFFF;
-}
-
-.fa-burger{
-    font-size: x-large;
-    color: #FFFFFF;
-}
-
-.fa-martini-glass-citrus{
-    font-size: x-large;
-    color: #FFFFFF;
-}
 
 /* login page*/
 
 .login-image {
-    background-image: url('https://res.cloudinary.com/martiless/image/upload/v1658244478/static/images/salad_bowl.f814acf57219.jpg');
+    background-image: url('https://res.cloudinary.com/martiless/image/upload/v1659617251/static/images/chip_image-min_dmaw2l.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -166,6 +158,7 @@ hr {
     height: 595px;
     padding-top: 22px;
     padding-left: 170px;
+    color: #FFFFFF;
     border-style: solid;
     border-color: #ffffff;
     background-color: rgba(50, 134, 58, .5);
@@ -173,6 +166,15 @@ hr {
     margin-top: 1px;
     text-align: center;
 
+}
+
+/* Log Out */ 
+
+.logout-image {
+    background-image: url('https://res.cloudinary.com/martiless/image/upload/v1659617251/static/images/chip_image-min_dmaw2l.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 
@@ -210,7 +212,7 @@ hr {
 
 .booking_container {
     width: 800px;
-    height: 750px;
+    height: auto;
     padding-left: 137px;
     border-style: solid;
     border-color: #ffffff;
@@ -218,6 +220,7 @@ hr {
     background-color: rgba(50, 134, 58, .5);
     border-width: 1px;
     margin: auto;
+    padding-bottom: 10px;
 }
 
 .login_container {

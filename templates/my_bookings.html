@@ -4,27 +4,28 @@
 
 <section id="booking" class="book_a_table">
     <div class="my_bookings_container">
-        <h2>My Bookings:</h2>
-        <p>To edit or cancel a booking please click on the buttons below.</p>
+        <h2 class="stroke">My Bookings:</h2>
+        <p class="stroke">To edit or cancel a
+            booking please click on the buttons below.</p>
         <div class="row">
-                {% for booking in bookings %}
-                <div class="col-md-5">
-                    <div class="card mb-5">
-                        <div class="card-body">
-                            <h5 class='card-title text-uppercase text-center'>{{ booking.name }}</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">{{ booking.date }} at
-                                {{ booking.time }}</h6>
-                            <div class='card-text'>
-                                <p>No. of People: {{ booking.number_of_people }}</p>
-                                <p>Location: {{booking.table}}</p>
-                                <p>Occasion: {{booking.occasion}}</p>
-                            </div>
-                            <a href="/edit_bookings/{{booking.id}}" class="btn btn-success">Edit</a>
-                            <a href="/delete_booking/{{booking.id}}" class="btn btn-success">Cancel</a>
+            {% for booking in bookings %}
+            <div class="col-md-5">
+                <div class="card mb-5">
+                    <div class="card-body">
+                        <h5 class='card-title text-uppercase text-center'>{{ booking.name }}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">{{ booking.date }} at
+                            {{ booking.time }}</h6>
+                        <div class='card-text'>
+                            <p>No. of People: {{ booking.number_of_people }}</p>
+                            <p>Location: {{booking.table}}</p>
+                            <p>Occasion: {{booking.occasion}}</p>
                         </div>
+                        <a href="/edit_bookings/{{booking.id}}" class="btn btn-success">Edit</a>
+                        <a href="/delete_booking/{{booking.id}}" class="btn btn-success">Cancel</a>
                     </div>
                 </div>
-                {%endfor%}
+            </div>
+            {%endfor%}
         </div>
     </div>
 </section>

@@ -46,6 +46,49 @@ The goals for this site are as follows:
 ## UX:
 
 ### User stories:
+In order to demonstrate the Agile approach that was used for this project, GitHub issues were used and a Kanban board was used to record all the user stories. 
+The user stories were the categorised using different labels, i.e MO - *Must have*, SO - *Should Have* and CO - *Could have*.
+Each storie was then moved from 'To Do' to 'In Progess' to  'Done' as the project progressed, with CO stories moved to a future feature board. 
+
+#### Project Progression: 
+<details>
+<summary>Progression One</summary>
+
+![Progression One](/static/images/progess_one.png)
+</details>
+
+<details>
+<summary>Progression Two</summary>
+
+![Progression Two](/static/images/progess_two.png)
+</details>
+
+<details>
+<summary>Progression Three</summary>
+
+![Progression Three](/static/images/progess_three.png)
+</details>
+
+<details>
+<summary>Progression Four</summary>
+
+![Progression Four](/static/images/progess_four.png)
+</details>
+
+<details>
+<summary>Progression Five</summary>
+
+![Progression Five](/static/images/progess_five.png)
+</details>
+
+<details>
+<summary>Progression Six</summary>
+
+![Progression Six](/static/images/progess_six.png)
+</details>
+
+***
+
 #### New User:  
 * As a new user I want to register so I can make a booking 
 * As a new user I want to book a table at Non-Dairy Godmother restaurant
@@ -115,6 +158,7 @@ With the structure in place, it was then time to move onto the scope plane. This
       * Cancel bookings 
       * Sign up for a newsletter
 
+***
 
 ## Structure:
 
@@ -132,6 +176,8 @@ The information above was then used to create a structure for the website. Below
 ## Surface:
 [Please see the live site here]()  
 
+***
+[Back to top](#Non-dairy-Godmother)  
 
 ### Color: 
 For this website I wanted to make it visually appealing, easy for people to read but also that it instantly came across as a 'Plant Power' website. As it is for a vegan restaurnat I wanted the look to be clean and fresh. For this I picked green as my main color, using white as the contrasting color to make everything appear modern and clean.
@@ -174,7 +220,7 @@ There are several features on this site to help users get the most out of their 
 <details>
 <summary>Header and Nav Bar:</summary>
 
-![Header and Nav Bar](/static/documents/features_images/header_nav.png)
+![Header and Nav Bar](/static/images/header_nav.png)
 </details>
 Each page has a Header and Navigation bar section, located at the top of the page. 
 The navigation bar consisted of links to a Book A Table page, a Newsletter page, a Log in page, a Register page and for authorised users a My Bookings, as well as a Home button that brings the user back to the landing page. The landing page can also be reached by clicking on the restaurant logo.
@@ -184,7 +230,7 @@ The navigation bar consisted of links to a Book A Table page, a Newsletter page,
 <details>
 <summary>Footer Information:</summary>
 
-![Opening Hours & Social Media](/static/documents/features_images/footer.png)
+![Opening Hours & Social Media](/static/images/footer.png)
 </details> 
 Each page also contains a footer element that consists of the restaurants social media accounts (Facebook, Twitter and Instagram), as well as the opening hours for the restaurant and copyright information. 
 
@@ -196,7 +242,7 @@ The *Home* page contains the header and footer as mentioned above
 <details>
 <summary>Main Area:</summary>
 
-![Main Area of Home Page](/static/documents/features_images/main_area.png)
+![Main Area of Home Page](/static/images/main_area.png)
 </details>
 The main focus on the *Home* page is the hero image, this is an image of the restaurant with a green overlay welcoming site visitors to the website. 
 
@@ -208,7 +254,7 @@ The next page on the site is the *Menu* page. This has all the header and footer
 <details>
 <summary>Menu Options:</summary>
 
-![Menus](/static/documents/features_images/menus.png)
+![Menus](/static/images/menus.png)
 </details>
 A visitor to the site can view the three menus available at the restaurant, that is, a Lunch Menu, a Dinner Menu and a Cocktails Menu. 
 Each menu can be viewed by clicking on the menu name or alternatively can be downloaded for viewing at a later point. 
@@ -221,7 +267,7 @@ Next up is the *Book A Table* page. Which has all the previously mentioned heade
 <details>
 <summary>Booking Form:</summary>
 
-![Menus](/static/documents/features_images/book_a_table.png)
+![Menus](/static/images/book_a_table.png)
 </details> 
 Once a user has either logged into their account or created an account they will be able to view the booking form. 
 
@@ -230,7 +276,7 @@ Once a user has either logged into their account or created an account they will
 <details>
 <summary>Date Picker:</summary>
 
-![Menus](/static/documents/features_images/date_picked.jpg)
+![Menus](/static/images/date_picker.jpg)
 </details>
 On the booking form the user has the option to pick the date they would like to make the bookings for. This can be done by either typing the date in the date section or by clicking on the little calendar in the corner of the box and popping out the date picker. 
 
@@ -239,7 +285,7 @@ On the booking form the user has the option to pick the date they would like to 
 <details>
 <summary>Time Picker:</summary>
 
-![Menus](/static/documents/features_images/time_picked.jpg)
+![Menus](/static/images/time_picker.jpg)
 </details>
 On the booking form the user has the option to pick the time they would like to make the bookings for. This is done by clicking on the dropdown menu of times and clicking on the time the user wishes to making the booking for. 
 
@@ -248,7 +294,7 @@ On the booking form the user has the option to pick the time they would like to 
 <details>
 <summary>Location Picker:</summary>
 
-![Menus](/static/documents/features_images/location_picked.jpg)
+![Menus](/static/images/location_picker.jpg)
 </details>
 On the booking form the user also has the option to pick where in the restaurant they would ideally like to site. This is done by clicking on the dropdown menu of locations and clicking on the users pefered location. 
 
@@ -257,7 +303,7 @@ On the booking form the user also has the option to pick where in the restaurant
 <details>
 <summary>Occasion Picker:</summary>
 
-![Menus](/static/documents/features_images/occasion_picked.jpg)
+![Menus](/static/images/occasion_picked.jpg)
 </details>
 The user also has the option to provide the restaurant with a reason for making the booking, be it a birthday, night out with friends or no particular reason at all. This can be done by clicking on the dropdown menu and picking which occasion best suits the booking.    
 
@@ -272,7 +318,7 @@ Some future features I would like for this app are:
 * A shop - where users can buy vouchers, in house wines, oils, dressings, etc
 
 ***
-[Back to top](##Non-dairy-Godmother)  
+[Back to top](#Non-dairy-Godmother)  
 
 ## User Stories Met:
 This section is to look back at the User stories we established during the strategy phase of the project. 

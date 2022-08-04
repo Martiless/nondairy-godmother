@@ -415,8 +415,7 @@ For the purpose of this project, the following technologies were used.
 * Python
 * Javascript
  
-
-
+ 
 ### Frameworks, Libraries, Programs & Applications Used:
 * Django
 * PostgreSQL

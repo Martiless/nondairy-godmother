@@ -76,17 +76,18 @@ class Booking(models.Model):
     name = models.CharField(max_length=60, null=True, blank=True)
     email_address = models.EmailField(null=True, blank=True)
     phone = models.IntegerField(null=True, blank=True)
-    number_of_people = models.CharField(max_length=2, choices=NUMBER_OF_PEOPLE_CHOICE, default='1',
+    number_of_people = models.CharField(max_length=2, 
+    choices=NUMBER_OF_PEOPLE_CHOICE, blank=False,
         help_text='<br> For parties of more than 10, please call us on 021 4569 782')
     date = models.DateField()
     time = models.CharField(
-        max_length=50, choices=TIME_CHOICE, default='12:00'
+        max_length=50, choices=TIME_CHOICE, blank=False
         )
     table = models.CharField(
-        max_length=50, choices=TABLE_CHOICE, default='Inside'
+        max_length=50, choices=TABLE_CHOICE, blank=False
         )
     occasion = models.CharField(
-        max_length=100, choices=OCCASION_CHOICE, default='Birthday'
+        max_length=100, choices=OCCASION_CHOICE, blank=False
         )
 
     def __str__(self):

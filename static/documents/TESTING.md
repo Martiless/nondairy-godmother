@@ -72,13 +72,19 @@ When a user moves to the Book A Table page they will be met with a form with 8 e
 1. Table
 1. Occasion 
 
+These elements need to be filled out before the user can make a booking, the checks for this page are as follows:
+* Try clicking on the 'Submit' button without entering any details in the log in form, this will cause an error message to appear staing "Please fill out this field". This message will appear each time the user tries to submit the form without filling out any of the fields in the form. 
+* Clicking on the Number of People drop down menu shows up a list from 1 to 10. For bookings more than 10 the user is adviced to contact the restaurant.
+* Selecting a date is done using the calender widget. Click on the calendar icon on the right and select a date.
+* Time, Table and Occasion are all selected using the dropdown menu, this is done but clicking on the arrow and choosing the option that best suits the booking. 
+
 ### My Bookings
 
 ### Edit Bookings:
 
 ### Thank you Page:
 
-### User Feedback:
+### User Feedback:  
 #### Home page image:
 Original image on the home page did not give users the impression that they had landed on a restaurants website but more a cooking blog. After this feedback the homepage image was changed to make the site look like a restaurant website from the minute you land on it.  
 
@@ -86,7 +92,7 @@ Original image on the home page did not give users the impression that they had 
 <summary>Original Home page image</summary>
 
 ![Original Home Page Image](https://res.cloudinary.com/martiless/image/upload/v1658244483/static/images/bowl_of_fruit.f931d0309a9e.jpg)
-</details>  <br>
+</details><br>
 
 
 #### Spacing on the pages:
@@ -94,3 +100,6 @@ There was originally a white gap between the navigation bar and the main image o
 
 #### Time out of message:
 When a user does just about anything on the site a message will appear to confirm their action. The time out on this was origianlly 2.5seconds. After receiving user feedback it was noted that these messages dissapear too quickly and were hard to read. The time out was increased to 4seconds to combat this. 
+
+[Back to Top of Testing](#manual-testing-of-non-dairy-godmother-website)     
+[Back to README](/README.md)

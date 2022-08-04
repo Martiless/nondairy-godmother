@@ -423,7 +423,7 @@ No errors found
 ![LightHouse Report]()
 ***
 ## Deployment:
-
+Deployment information can be found [here](/static/documents/DEPLOYMENT.md)
 ***
 ## Credits:
 * Initial setup of the Django project was done following Code Institutes walkthrough project.  

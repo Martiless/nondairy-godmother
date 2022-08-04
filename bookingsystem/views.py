@@ -3,7 +3,7 @@ from django.views import generic
 from django.contrib import messages
 from django.views.generic.edit import FormView
 from .forms import OnlineForm, SignUpForm
-from .models import Booking, SignUp
+from .models import Booking
 
 
 class Home(generic.DetailView):
@@ -22,8 +22,8 @@ class BookingView(FormView):
     """
     Renders the Booking form page in the browser
     Using the OnlineForm created in the forms.py file
-    When the booking form is completed and submitted 
-    the user is redirect to a thank you for booking 
+    When the booking form is completed and submitted
+    the user is redirect to a thank you for booking
     message page.
     """
     template_name = 'bookings.html'
@@ -38,7 +38,7 @@ class BookingView(FormView):
         Uses the OnlineForm from forms.py
         Checks if all the infromation in valid
         and then saves it to the database.
-        Once saved users are redirected to the 
+        Once saved users are redirected to the
         Thank you page
         """
         form = OnlineForm(data=request.POST)
@@ -104,13 +104,13 @@ class ListBookingView(generic.DetailView):
 def edit_booking_view(request, booking_id):
     """
     When a user is on the My Bookings page
-    which can only be accessed if you are 
-    logged in, they can click on the edit button. 
-    This will bring them to a new page, where the booking 
+    which can only be accessed if you are
+    logged in, they can click on the edit button.
+    This will bring them to a new page, where the booking
     they wish to edit, located using the booking id,
     appears, prepopulated with the current information.
     Once the user clicks on the submit changes button
-    they will be redirected to the home page and a 
+    they will be redirected to the home page and a
     confimation message will appear.
     """
     booking = get_object_or_404(Booking, id=booking_id)
@@ -127,19 +127,19 @@ def edit_booking_view(request, booking_id):
         'form': form
     })
 
-   
+
 def delete_booking(request, booking_id):
     """
     When a user is on the My Bookings page
-    which can only be accessed if you are 
+    which can only be accessed if you are
     logged in, they can click on the cancel booking
-    button. This will cancel the booking using its 
-    booking id, redirect the user back to the home page and 
+    button. This will cancel the booking using its
+    booking id, redirect the user back to the home page and
     pop up a confimation message will appear.
     """
     booking = get_object_or_404(Booking, id=booking_id)
     booking.delete()
-    # Pops up a message to the user when a bookings is cancelled 
+    # Pops up a message to the user when a bookings is cancelled
     messages.success(request, 'Your booking has been cancelled')
     return redirect('/')
 
@@ -148,8 +148,8 @@ class SignUpView(FormView):
     """
     Renders the Sign up form page in the browser
     Using the SignUpForm created in the forms.py file
-    When the Sign up form is completed and submitted 
-    the user will receive a message to say it was 
+    When the Sign up form is completed and submitted
+    the user will receive a message to say it was
     successful.
     """
     template_name = 'sign_up.html'
@@ -163,8 +163,8 @@ class SignUpView(FormView):
         Uses the SignUpForm from forms.py
         Checks if all the infromation in valid
         and then saves it to the database.
-        Once the information is saved the site 
-        visitor will receive a pop up message 
+        Once the information is saved the site
+        visitor will receive a pop up message
         """
         form = SignUpForm(data=request.POST)
         if form.is_valid():

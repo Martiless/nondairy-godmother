@@ -415,7 +415,7 @@ For the purpose of this project, the following technologies were used.
 * Python
 * Javascript
  
- 
+
 ### Frameworks, Libraries, Programs & Applications Used:
 * Django
 * PostgreSQL
@@ -436,6 +436,9 @@ For the purpose of this project, the following technologies were used.
 #### Heroku
 * Heroku was used to deploy the project.
 
+#### Cloudinary
+* Cloudinary was used to store some of the images used in this project
+
 #### Balsamiq 
 * Balsamiq was used to draw initial Wireframes for this project.
 
@@ -453,13 +456,18 @@ For the purpose of this project, the following technologies were used.
 
 ## Validation:
 
-See screenshot to W3C validator and Jigsaw CSS validator [here]( "Link to validation screenshots")
+* HTML:
+      - No errors were found when passed through [W3C Validator tool](https://validator.w3.org/#validate_by_input)
+      - To view screenshots of validations please click [here](/static/documents/VALIDATION.md)
 
-### **Index.html:**
-No errors found. 
+* CSS:
+      - No errors were found when passed through the [W3C Validator tool](https://jigsaw.w3.org/css-validator/validator) 
 
-### **Style.css:**
-No errors found
+* JavaScript: 
+      - No costume Javascript was used in this project. The Javascript included at the end of my base.html was taken from Code Institues walkthrough project. 
+
+* Python: 
+      - No errors were found when passed through [PEP8 Validator](http://pep8online.com/)
 
 ***
 [Back to top](#Non-dairy-Godmother)

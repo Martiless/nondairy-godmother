@@ -76,9 +76,11 @@ class Booking(models.Model):
     name = models.CharField(max_length=60, null=True, blank=True)
     email_address = models.EmailField(null=True, blank=True)
     phone = models.IntegerField(null=True, blank=True)
-    number_of_people = models.CharField(max_length=2, 
-    choices=NUMBER_OF_PEOPLE_CHOICE, blank=False,
-        help_text='<br> For parties of more than 10, please call us on 021 4569 782')
+    number_of_people = models.CharField(max_length=2,
+                                        choices=NUMBER_OF_PEOPLE_CHOICE,
+                                        blank=False, help_text='<br>Parties of'
+                                        '<br>more than 10,'
+                                        '<br>please call us on 021 4569 782')
     date = models.DateField()
     time = models.CharField(
         max_length=50, choices=TIME_CHOICE, blank=False
@@ -96,7 +98,7 @@ class Booking(models.Model):
 
 class SignUp(models.Model):
     """
-    Model to be used in the forms.py for the sign up to newsletter 
+    Model to be used in the forms.py for the sign up to newsletter
     in the footer of each page a user goes onto.
     It uses the User Foreign Key so that each book will be associated with a
     specific user.

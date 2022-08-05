@@ -311,6 +311,7 @@ The user also has the option to provide the restaurant with a reason for making 
 
 ## Future Features:
 Some future features I would like for this app are:
+* Automated confirmation emails - that will be sent out to a user when they have made, edited or cancelled a booking
 * Aviod over bookings - a backend feature that filters through all the bookings at a certain time and makes sure that the number of bookings does not exceed the number of available seats
 * Dinner Club Login - where members can see special offer that are only for members
 * A Review page - this is a page where users can view reviews from previous diners but can also leave their own review on the restaurant
@@ -324,31 +325,31 @@ Some future features I would like for this app are:
 This section is to look back at the User stories we established during the strategy phase of the project. 
 We are looking to see if we have met all the goals we set out. 
 #### New User: 
-* As a new user I want to register so I can make a booking
+* As a new user I want to register so I can make a booking   
 **Met on the Book a Table Page**
-* As a new user I want to book a table at Non-Dairy Godmother restaurant
+* As a new user I want to book a table at Non-Dairy Godmother restaurant   
 **Met on the Book a Table Page**
-* As a new user I want to pick the time, date, number of people for the booking
+* As a new user I want to pick the time, date, number of people for the booking   
 **Met on the Book form on the Book a Table page**
-* As a new user I also want to the option to pick the occasion and area I would like to site
+* As a new user I also want to the option to pick the occasion and area I would like to site   
 **Met on the Book form on the Book a Table page**
-* As a new user I want to be able to view menus
+* As a new user I want to be able to view menus  
 **Met on the Menus page, users can view three menus for the restaurant**
-* As a new user I want to be able to log in to edit or cancel my booking
+* As a new user I want to be able to log in to edit or cancel my booking   
 **Met on the My Bookings page once the user is logged in**
-* As a new user I want to be able to sign up for the restaurants monthly newsletter
+* As a new user I want to be able to sign up for the restaurants monthly newsletter  
 **Met on the Newsletter page**
 
 #### Returning User:
-* As a returning user I want to log in to my account
+* As a returning user I want to log in to my account  
 **Met on the the Log in page**
-* As a returning user I want to book a table at Non-Dairy Godmother restaurant
+* As a returning user I want to book a table at Non-Dairy Godmother restaurant   
 **Met on the Book a Table Page**
-* As a returning user I want to view my bookings 
+* As a returning user I want to view my bookings    
 **Met on the My Bookings page once the user is logged in**
-* As a returning user I want to be able to edit or cancel my bookings
+* As a returning user I want to be able to edit or cancel my bookings   
 **Met on the My Bookings page once the user is logged in**
-* As a returning user I want to see if the menus have been updated
+* As a returning user I want to see if the menus have been updated   
 **Met on the Menus page**
 
 ***

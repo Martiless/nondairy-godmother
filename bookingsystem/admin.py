@@ -8,7 +8,7 @@ class BookingAdmin(admin.ModelAdmin):
     list_display = ('name', 'email_address')
 
 
-@admin.register(Signup)
+@admin.register(SignUp)
 class SignUpAdmin(admin.ModelAdmin):
     model = SignUp
     list_display = ('__all__')

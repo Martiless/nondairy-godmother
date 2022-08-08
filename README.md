@@ -171,7 +171,7 @@ The information above was then used to create a structure for the website. Below
 
 
 ## Skeleton:
-[Wireframes](/static/documents/WIREFRAMES.MD) were created to set out the initial appearance of the website while also making sure to keep the end-user in mind at all times. Wireframes were created using [Balsamiq](https://balsamiq.com/).  
+[Wireframes](/documents/WIREFRAMES.MD) were created to set out the initial appearance of the website while also making sure to keep the end-user in mind at all times. Wireframes were created using [Balsamiq](https://balsamiq.com/).  
 
 ## Surface:
 [Please see the live site here]()  
@@ -355,7 +355,7 @@ We are looking to see if we have met all the goals we set out.
 ***
 
 ## Testing:
-Testing information can be viewed [here](/static/documents/TESTING.md)
+Testing information can be viewed [here](/documents/TESTING.md)
 
 ***
 
@@ -459,7 +459,7 @@ For the purpose of this project, the following technologies were used.
 
 * HTML:
       - No errors were found when passed through [W3C Validator tool](https://validator.w3.org/#validate_by_input)
-      - To view screenshots of validations please click [here](/static/documents/VALIDATION.md)
+      - To view screenshots of validations please click [here](/documents/VALIDATION.md)
 
 * CSS:
       - No errors were found when passed through the [W3C Validator tool](https://jigsaw.w3.org/css-validator/validator) 

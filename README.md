@@ -4,9 +4,7 @@ This website is designed for a fictional vegan restaurant based in Cork, Ireland
 
 This website has been created as the Fourth Milestone project for Code Institute's Full Stack Software Development Diploma. It was built using a Full-Stack Toolkit. GitPod was used for writing the code for this website, as well as committing and pushing to GitHub. GitHub was then used to store the project after it had been pushed from GitPod. Once all the code had been written, Heroku was then used to deploy the website. 
 
-![Am I Responsive]()
-
-### View the live website [here]()
+### View the live website [here](https://non-dairy-godmother.herokuapp.com/)
 ***
 ## Table of content: 
  1. [Site Goals](#Site-Goals)
@@ -30,25 +28,25 @@ This website has been created as the Fourth Milestone project for Code Institute
  1. [Accessibility](#Accessibility)
  1. [Deployment](#Deployment)
  1. [Credits](#Credits)
- 1. [Acknowledgments](#Acknowledgements)
+ 1. [Acknowledgements](#Acknowledgements)
 ***
   
 
 ## Site Goals:
 
 The goals for this site are as follows:
-* Allow users to making a booking at the restaurant
+* Allow users to make a booking at the restaurant
 * Allow users to edit or cancel their booking
 * Allow users to sign up for a monthly newsletter
-* Allow the restaurant owner to collect a database of customer who have booked with them 
-* Allow the restaurant owner to collect a database from marketing purposes in the form of a monthly newsletter
+* Allow the restaurant owner to collect a database of customers who have booked with them 
+* Allow the restaurant owner to collect a database for marketing purposes in the form of a monthly newsletter
 
 ## UX:
 
 ### User stories:
-In order to demonstrate the Agile approach that was used for this project, GitHub issues were used and a Kanban board was used to record all the user stories. 
-The user stories were the categorised using different labels, i.e MO - *Must have*, SO - *Should Have* and CO - *Could have*.
-Each storie was then moved from 'To Do' to 'In Progess' to  'Done' as the project progressed, with CO stories moved to a future feature board. 
+To demonstrate the Agile approach that was used for this project, GitHub issues were used and a Kanban board was used to record all the user stories. 
+The user stories were categorised using different labels, i.e MO - *Must have*, SO - *Should Have* and CO - *Could have*.
+Each story was then moved from 'To Do' to 'In Progress' to  'Done' as the project progressed, with CO stories moved to a future feature board. 
 
 #### Project Progression: 
 <details>
@@ -90,33 +88,33 @@ Each storie was then moved from 'To Do' to 'In Progess' to  'Done' as the projec
 ***
 
 #### New User:  
-* As a new user I want to register so I can make a booking 
-* As a new user I want to book a table at Non-Dairy Godmother restaurant
-* As a new user I want to pick the time, date, number of people for the booking
-* As a new user I also want to the option to pick the occasion and area I would like to site
-* As a new user I want to be able to view menus
-* As a new user I want to be able to log in to edit or cancel my booking 
-* As a new user I want to be able to sign up for the restaurants monthly newsletter
+* As a new user, I want to register so I can make a booking 
+* As a new user, I want to book a table at Non-Dairy Godmother restaurant
+* As a new user, I want to pick the time, date and number of people for the booking
+* As a new user, I also want the option to pick the occasion and area I would like to site
+* As a new user, I want to be able to view menus
+* As a new user, I want to be able to log in to edit or cancel my booking 
+* As a new user, I want to be able to sign up for the restaurant's monthly newsletter
 
 #### Returning User:
-* As a returning user I want to log in to my account
-* As a returning user I want to book a table at Non-Dairy Godmother restaurant
-* As a returning user I want to view my bookings 
-* As a returning user I want to be able to edit or cancel my bookings 
-* As a returning user I want to see if the menus have been updated
+* As a returning user, I want to log in to my account
+* As a returning user, I want to book a table at Non-Dairy Godmother restaurant
+* As a returning user, I want to view my bookings 
+* As a returning user, I want to be able to edit or cancel my bookings 
+* As a returning user, I want to see if the menus have been updated
 
 ## Development Planes:
 To create a website that is comprehensive and informative for a user, as a developer you need to look at all aspects of the website and how someone who visits your website will use it. You have to consider all the user stories that have been outlined in the above sections.  
 
 ## Strategy
-The strategy principal looks at user needs, as well product/service objectives. This websites target audience was broken down into three categories:
+The strategy principal looks at user needs, as well product/service objectives. This website's target audience was broken down into three categories:
 ### Roles: 
 * New User
 * Existing User  
 
 ### Demographic:
 * People aged between 16 - 40 years
-* Working indiviuals with disposable income 
+* Working individuals with disposable income 
 
 ### Psychographic:
 #### Lifestyle:
@@ -124,7 +122,7 @@ The strategy principal looks at user needs, as well product/service objectives. 
 * People who like eating out
 
 #### Values:
-* Reducing the amount of animal products being used
+* Reducing the number of animal products being used
 * Environmentally Conscious
 
 #### The website needs to allow users to:  
@@ -132,7 +130,7 @@ The strategy principal looks at user needs, as well product/service objectives. 
 * Log into their account 
 * Edit a booking
 * Cancel a booking 
-* Sign up to a newsletter
+* Sign up for a newsletter
 
 
 #### The website needs to allow the restaurant owner to:  
@@ -151,7 +149,7 @@ With the structure in place, it was then time to move onto the scope plane. This
 
 ### Functionality Requirements:
 1. The user will be able to:
-      * Book at table at a certain time and date
+      * Book a table at a certain time and date
       * Choose the number of people for the booking 
       * Choose the occasion and their prefered location in the restaurant
       * Edit bookings 
@@ -180,7 +178,7 @@ The information above was then used to create a structure for the website. Below
 [Back to top](#Non-dairy-Godmother)  
 
 ### Color: 
-For this website I wanted to make it visually appealing, easy for people to read but also that it instantly came across as a 'Plant Power' website. As it is for a vegan restaurnat I wanted the look to be clean and fresh. For this I picked green as my main color, using white as the contrasting color to make everything appear modern and clean.
+For this website, I wanted to make it visually appealing and easy for people to read but also that it instantly came across as a 'Plant Power' website. As it is for a vegan restaurant I wanted the look to be clean and fresh. For this I picked green as my main color, using white as the contrasting color to make everything appear modern and clean.
 I wanted to make sure the color scheme was not only eye-catching but also that it passed the LightHouse Accessibility test. 
 
 To make sure text could be seen without issue on my chosen colors I used [Coolors](https://coolors.co/) color contrast checker.
@@ -223,7 +221,7 @@ There are several features on this site to help users get the most out of their 
 ![Header and Nav Bar](/static/images/header_nav.png)
 </details>
 Each page has a Header and Navigation bar section, located at the top of the page. 
-The navigation bar consisted of links to a Book A Table page, a Newsletter page, a Log in page, a Register page and for authorised users a My Bookings, as well as a Home button that brings the user back to the landing page. The landing page can also be reached by clicking on the restaurant logo.
+The navigation bar consisted of links to a Book A Table page, a Newsletter page, a Login page, a Register page and for authorised users a My Bookings, as well as a Home button that brings the user back to the landing page. The landing page can also be reached by clicking on the restaurant logo.
 
 &nbsp;
 
@@ -232,7 +230,7 @@ The navigation bar consisted of links to a Book A Table page, a Newsletter page,
 
 ![Opening Hours & Social Media](/static/images/footer.png)
 </details> 
-Each page also contains a footer element that consists of the restaurants social media accounts (Facebook, Twitter and Instagram), as well as the opening hours for the restaurant and copyright information. 
+Each page also contains a footer element that consists of the restaurant's social media accounts (Facebook, Twitter and Instagram), as well as the opening hours for the restaurant and copyright information. 
 
 &nbsp;
 
@@ -249,7 +247,7 @@ The main focus on the *Home* page is the hero image, this is an image of the res
 &nbsp;
 
 ### Menus Page:
-The next page on the site is the *Menu* page. This has all the header and footer feaurtes mentioned above.
+The next page on the site is the *Menu* page. This has all the header and footer features mentioned above.
 
 <details>
 <summary>Menu Options:</summary>
@@ -257,7 +255,7 @@ The next page on the site is the *Menu* page. This has all the header and footer
 ![Menus](/static/images/menus.png)
 </details>
 A visitor to the site can view the three menus available at the restaurant, that is, a Lunch Menu, a Dinner Menu and a Cocktails Menu. 
-Each menu can be viewed by clicking on the menu name or alternatively can be downloaded for viewing at a later point. 
+Each menu can be viewed by clicking on the menu name or can be downloaded for viewing at a later point. 
 
 &nbsp;
 
@@ -278,7 +276,7 @@ Once a user has either logged into their account or created an account they will
 
 ![Menus](/static/images/date_picker.jpg)
 </details>
-On the booking form the user has the option to pick the date they would like to make the bookings for. This can be done by either typing the date in the date section or by clicking on the little calendar in the corner of the box and popping out the date picker. 
+On the booking form, the user has the option to pick the date they would like to make the bookings. This can be done by either typing the date in the date section or by clicking on the little calendar in the corner of the box and popping out the date picker. 
 
 &nbsp;
 
@@ -287,7 +285,7 @@ On the booking form the user has the option to pick the date they would like to 
 
 ![Menus](/static/images/time_picker.jpg)
 </details>
-On the booking form the user has the option to pick the time they would like to make the bookings for. This is done by clicking on the dropdown menu of times and clicking on the time the user wishes to making the booking for. 
+On the booking form, the user has the option to pick the time they would like to make the bookings. This is done by clicking on the dropdown menu of times and clicking on the time the user wishes to make the booking. 
 
 &nbsp;
 
@@ -296,7 +294,7 @@ On the booking form the user has the option to pick the time they would like to 
 
 ![Menus](/static/images/location_picker.jpg)
 </details>
-On the booking form the user also has the option to pick where in the restaurant they would ideally like to site. This is done by clicking on the dropdown menu of locations and clicking on the users pefered location. 
+On the booking form, the user also has the option to pick where in the restaurant they would ideally like to sit. This is done by clicking on the dropdown menu of locations and clicking on the user's peferred location. 
 
 &nbsp;
 
@@ -312,11 +310,11 @@ The user also has the option to provide the restaurant with a reason for making 
 ## Future Features:
 Some future features I would like for this app are:
 * Automated confirmation emails - that will be sent out to a user when they have made, edited or cancelled a booking
-* Aviod over bookings - a backend feature that filters through all the bookings at a certain time and makes sure that the number of bookings does not exceed the number of available seats
-* Dinner Club Login - where members can see special offer that are only for members
-* A Review page - this is a page where users can view reviews from previous diners but can also leave their own review on the restaurant
-* Gallery page - which would be linked to the restaurants Instagram account 
-* A shop - where users can buy vouchers, in house wines, oils, dressings, etc
+* Avoid overbookings - a backend feature that filters through all the bookings at a certain time and makes sure that the number of bookings does not exceed the number of available seats
+* Dinner Club Login - where members can see the special offers that are only for members
+* A Review page - this is a page where users can view reviews from previous diners but can also leave their reviews on the restaurant
+* Gallery page - which would be linked to the restaurant's Instagram account 
+* A shop - where users can buy vouchers, in-house wines, oils, dressings, etc
 
 ***
 [Back to top](#Non-dairy-Godmother)  
@@ -325,31 +323,31 @@ Some future features I would like for this app are:
 This section is to look back at the User stories we established during the strategy phase of the project. 
 We are looking to see if we have met all the goals we set out. 
 #### New User: 
-* As a new user I want to register so I can make a booking   
+* As a new user, I want to register so I can make a booking   
 **Met on the Book a Table Page**
-* As a new user I want to book a table at Non-Dairy Godmother restaurant   
+* As a new user, I want to book a table at Non-Dairy Godmother restaurant   
 **Met on the Book a Table Page**
-* As a new user I want to pick the time, date, number of people for the booking   
+* As a new user, I want to pick the time, date and number of people for the booking   
 **Met on the Book form on the Book a Table page**
-* As a new user I also want to the option to pick the occasion and area I would like to site   
+* As a new user, I also want the option to pick the occasion and area I would like to site   
 **Met on the Book form on the Book a Table page**
-* As a new user I want to be able to view menus  
+* As a new user, I want to be able to view menus  
 **Met on the Menus page, users can view three menus for the restaurant**
 * As a new user I want to be able to log in to edit or cancel my booking   
 **Met on the My Bookings page once the user is logged in**
-* As a new user I want to be able to sign up for the restaurants monthly newsletter  
+* As a new user, I want to be able to sign up for the restaurant's monthly newsletter  
 **Met on the Newsletter page**
 
 #### Returning User:
-* As a returning user I want to log in to my account  
-**Met on the the Log in page**
-* As a returning user I want to book a table at Non-Dairy Godmother restaurant   
+* As a returning user, I want to log in to my account  
+**Met on the Log in page**
+* As a returning user, I want to book a table at Non-Dairy Godmother restaurant   
 **Met on the Book a Table Page**
-* As a returning user I want to view my bookings    
+* As a returning user, I want to view my bookings    
 **Met on the My Bookings page once the user is logged in**
-* As a returning user I want to be able to edit or cancel my bookings   
+* As a returning user, I want to be able to edit or cancel my bookings   
 **Met on the My Bookings page once the user is logged in**
-* As a returning user I want to see if the menus have been updated   
+* As a returning user, I want to see if the menus have been updated   
 **Met on the Menus page**
 
 ***
@@ -360,12 +358,12 @@ Testing information can be viewed [here](/documents/TESTING.md)
 ***
 
 ## Bugs:
-1. Styling of the base page was not consistant across all pages on the site.
+1. The styling of the base page was not consistent across all pages on the site.
       * I had not included "{% load static %}" at the beginning of my base.html page. Once this was edited, all pages loaded correctly. 
 1. Font Awesome icons not appearing on site.
       * 
-1. Booking page was not loading, the following error message was coming up:
-      * After reading through the yellow error page, it showed elements of the the booking model didn't exist. I realised that I had changed elements of the model without making any migrations.
+1. The booking page was not loading, the following error message was coming up:
+      * After reading through the yellow error page, it showed elements of the booking model didn't exist. I realised that I had changed elements of the model without making any migrations.
 <details>
 <summary>Booking Page Error</summary>
 
@@ -373,22 +371,22 @@ Testing information can be viewed [here](/documents/TESTING.md)
 </details>
 
 1. Bookings appeared to be completed on the site but nothing was happening in the backend. 
-      * One reason this wasn't working was because I had manually entered the booking form into the bookings.html file as apose to entering it using django's built in features.
+      * One reason this wasn't working was that I had manually entered the booking form into the bookings.html file as opposed to entering it using Django's built-in features.
       * Once this was fixed I then had to add the POST function to the bookings view. 
 
 1. When trying to add specific users the booking form loaded but throw up a ProgrammingError when the user clicked on "Book Now"
       * I had to do a bit of troubleshooting to solve this one. After spending a bit of time researching and chatting with other students on Slack it was discovered that my view for the booking form was written for the older version of the booking model and had to be updated to include the user request.
-      * After making these changes a user was now able to complete the booking and were redirected to the "Thank you" page.
+      * After making these changes a user was now able to complete the booking and was redirected to the "Thank you" page.
 <details>
 <summary>ID Error</summary>
 
 ![ID Error](https://res.cloudinary.com/martiless/image/upload/v1658244451/static/documents/errors/id_error.060a7133eaae.png)
 </details>
 
-1. After correcting the above ID error it caused another ProgrammingError when I logged into the django admin page and clicked on the bookings tab.
+1. After correcting the above ID error it caused another ProgrammingError when I logged into the Django admin page and clicked on the bookings tab.
       * After countless attempts to solve this error but debugging, troubleshooting and reaching out to various programming communities (including Slack) I had to eventually contact the CI tutors. 
-      * There were serveral attempts to find the issue in the code, looking at the 'list_display' in the admin.py file, correcting errors in the models.py file neither of which solved the problem.
-      * We cleared the previous migrations in order to create the admin page again but the tutor noticed that the Heroku postgres database was still connected. 
+      * There were several attempts to find the issue in the code, looking at the 'list_display' in the admin.py file and correcting errors in the models.py file neither of which solved the problem.
+      * We cleared the previous migrations to create the admin page again but the tutor noticed that the Heroku Postgres database was still connected. 
       * I reset the database from inside Heroku and performed the migrations, this corrected the issue 
 <details>
 <summary>Admin Page Error</summary>
@@ -396,19 +394,19 @@ Testing information can be viewed [here](/documents/TESTING.md)
 ![Admin Page Error](https://res.cloudinary.com/martiless/image/upload/v1658244452/static/documents/errors/admin_page_error.7fa4a367176c.png)
 </details>
 
-1. Bookings were not showing up on "My Bookings" page.
-      * In my view I had created a variable called my_bookings and then used this as the context in my view.
-      * In the my_bookings.html page I had created a for loop with the intention of looping through the bookings of a authorised user and display them for editing or cancelling. However, in creating this for loop I had used the wrong variable. The context in my views.py file was "my_bookings" where as in the loop I had used "for booking in bookings" There for there was a context/template mismatch. 
-      * Once I removed the line of code in the view.py file which includede the "my_bookings" variable as it was irelevent and changed the context to bookings (as this was the query that was filtering the users bookings) the bookings appear on the "My Bookings" page of the site. 
+1. Bookings were not showing up on the "My Bookings" page.
+      * In my view, I had created a variable called my_bookings and then used this as the context in my view.
+      * In the my_bookings.html page, I had created a for loop to iterate through the bookings of an authorised user and display them for editing or cancelling. However, in creating this for loop I had used the wrong variable. The context in my views.py file was "my_bookings" whereas in the loop I had used "for booking in bookings" Therefore there was a context/template mismatch. 
+      * Once I removed the line of code in the view.py file which included the "my_bookings" variable as it was irrelevent and changed the context to bookings (as this was the query that was filtering the user's bookings) the bookings appear on the "My Bookings" page of the site. 
 
-1. During the testing stage it was discover that both the Newsletter form and the Book a Table form had elements of it that were not showing up as being a required field. After a quick search I found that I needed to provide each field with a handle that checks if the field is required. I also added lables for each of these required fields, along with placeholders.  
+1. During the testing stage, it was discovered that both the Newsletter form and the Book a Table form had elements of it that were not showing up as being a required field. After a quick search, I found that I needed to provide each field with a handle that checks if the field is required. I also added labels for each of these required fields, along with placeholders.  
 
 
 ***
 [Back to top](#Non-dairy-Godmother) 
 
 ## Technologies Used:
-For the purpose of this project, the following technologies were used.  
+For this project, the following technologies were used.  
 
 ### Languages:
 * HTML
@@ -423,7 +421,7 @@ For the purpose of this project, the following technologies were used.
 * Bootstrap
 
 #### Google Font
-* Googel Font was used to import the choosen font for this project Lora.
+* Google Font was used to import the chosen font for this project Lora.
 
 #### Font Awesome
 * Font Awesome was used on each page of the website to provide icons for UX purposes.  
@@ -446,9 +444,6 @@ For the purpose of this project, the following technologies were used.
 #### Figma
 * Figma was used during the structure phase of this project. It was used to create a sitemap of the website. 
 
-#### Am I Responsive
-* Am I Responsive was used to check that each page of the site was responsive. It was also used to create the mock-up image seen at the beginning of this document. 
-
 #### Google Development Tools
 * Google Dev Tools was used to edit code and check responsiveness before making the changes permanent.
 
@@ -458,14 +453,14 @@ For the purpose of this project, the following technologies were used.
 ## Validation:
 
 * HTML:
-      - No errors were found when passed through [W3C Validator tool](https://validator.w3.org/#validate_by_input)
+      - No errors were found when passed through the [W3C Validator tool](https://validator.w3.org/#validate_by_input)
       - To view screenshots of validations please click [here](/documents/VALIDATION.md)
 
 * CSS:
       - No errors were found when passed through the [W3C Validator tool](https://jigsaw.w3.org/css-validator/validator) 
 
 * JavaScript: 
-      - No costume Javascript was used in this project. The Javascript included at the end of my base.html was taken from Code Institues walkthrough project. 
+      - No costume Javascript was used in this project. The Javascript included at the end of my base.html was taken from the Code Institutes walkthrough project. 
 
 * Python: 
       - No errors were found when passed through [PEP8 Validator](http://pep8online.com/)
@@ -480,7 +475,7 @@ For the purpose of this project, the following technologies were used.
 Deployment information can be found [here](/static/documents/DEPLOYMENT.md)
 ***
 ## Credits:
-* Initial setup of the Django project was done following Code Institutes walkthrough project.  
+* The initial setup of the Django project was done following the Code Institutes walkthrough project.  
 
 
 ## Acknowledgements:

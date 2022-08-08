@@ -148,7 +148,7 @@ hr {
 /* login page*/
 
 .login-image {
-    background-image: url('https://res.cloudinary.com/martiless/image/upload/v1659617251/static/images/chip_image-min_dmaw2l.jpg');
+    background-image: url('https://res.cloudinary.com/martiless/image/upload/v1659696270/static/images/chip_image-min.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -172,7 +172,7 @@ hr {
 /* Log Out */ 
 
 .logout-image {
-    background-image: url('https://res.cloudinary.com/martiless/image/upload/v1659617251/static/images/chip_image-min_dmaw2l.jpg');
+    background-image: url('https://res.cloudinary.com/martiless/image/upload/v1659696270/static/images/chip_image-min.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

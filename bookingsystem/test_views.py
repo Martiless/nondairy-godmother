@@ -4,13 +4,7 @@ from bookingsystem.models import Booking, SignUp
 
 
 class TestViews(TestCase):
-
-    def setUp(self):
-        self.client = Client()
-        self.home_url = reverse('Home')
-
     def test_home_view_GET(self):
-        response = self.client.get(self.home_url)
-
+        response = self.client.get('/')
         self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'bookingsystem/')
+        self.assertTemplateUsed(response, 'index.html', 'base.html')

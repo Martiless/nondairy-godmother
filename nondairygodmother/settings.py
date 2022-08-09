@@ -102,8 +102,12 @@ WSGI_APPLICATION = 'nondairygodmother.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
+# If statement to check if you are testing code. 
+# If code is being tested then Django will use the first database
+# Otherwise the Database defined in env.py will be used
 
 if 'test' in sys.argv:
+    # Database for testing
     DATABASES = {
      'default': {
           'ENGINE': 'django.db.backends.sqlite3',

@@ -11,4 +11,4 @@ class BookingAdmin(admin.ModelAdmin):
 @admin.register(SignUp)
 class SignUpAdmin(admin.ModelAdmin):
     model = SignUp
-    list_display = ('__all__')
+    list_display = ('first_name', 'last_name', 'email_address')

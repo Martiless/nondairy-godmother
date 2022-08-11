@@ -1,8 +1,6 @@
 from django.test import TestCase, Client
-from django.urls import reverse
 from bookingsystem.models import Booking, SignUp
 from django.contrib.auth.models import User
-
 
 
 class TestViews(TestCase):
@@ -13,6 +11,50 @@ class TestViews(TestCase):
     as well as the view being tested to make sure everything
     is being tested as it would appear for a user
     """
+
+    def setUp(self):
+        """
+        Set up test users and booking in
+        order to test the CRUD functionality
+        of the views"""
+       
+        testing_user = User.objects.create_user(
+            username='JohnSmith',
+            first_name='John',
+            last_name='Smith',
+            email='johnsmith@email.com',
+            password='RandomWord1'
+        )
+
+        Booking.objects.create(
+            user=testing_user,
+            name='John Smith',
+            email_address='johnsmith@email.com',
+            phone='123654789',
+            number_of_people='2',
+            date='2022-10-20',
+            time='19:00',
+            table='Window',
+            occasion='none'
+        )
+
+        SignUp.objects.create(
+            first_name='Cindy Lou',
+            last_name='Who',
+            email_address='cindylou@whovill.com'
+        )
+
+    def log_in(self):
+        """
+        This is to help test the views
+        that require a user to be logged in
+        to access
+        """
+        self.client.login(
+            username= 'JohnSmith',
+            password= 'RandomWord1'
+        )
+
 
     def test_home_view_get(self):
         """
@@ -80,14 +122,51 @@ class TestViews(TestCase):
         self.assertTemplateUsed(response, 'bookings.html', 'base.html')
 
     def test_my_booking_view(self):
-            """
-            Testing the HTTP response of the view using
-            Djangos built-in HTTP response with a status code
-            of 200 which is a successful HHTP response.
-            Using the '/my_bookings' will direct to the My Bookings page.
-            To make sure the view is using the correct
-            template Template Used is my_bookings.html
-            """
-            response = self.client.get('/my_bookings/')
-            self.assertEqual(response.status_code, 200)
-            self.assertTemplateUsed(response, 'my_bookings.html', 'base.html')
+        """
+        Using the log_in function saved above to test
+        the HTTP response of the 'My Bookings' page
+        Using the '/my_bookings' will direct to the My Bookings page.
+        To make sure the view is using the correct
+        template Template Used is my_bookings.html
+        """
+        self.log_in()
+        response = self.client.get('/my_bookings/')
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'my_bookings.html', 'base.html')
+
+    def test_edit_bookings_view(self):
+        """
+        Using the log in function saved above to test
+        the HTTP reponse of the 'Edit booking' page.
+        Using the '/edit_bookings/1 url this will direct to
+        the booking outlined in the booking id.
+        To make sure the view is using the correct
+        template Tempalte Used is set to edit_booking.html
+        """
+        self.log_in()
+        response = self.client.get('/edit_bookings/1')
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'edit_bookings.html', 'base.html')
+
+    #def test_edit_bookings_redirect(self):
+       # """
+       # This is to test that once a logged in
+       # user edits their booking, they are then
+       # redirected back to the home page.
+       # This is done using a response status code of 302
+       # """
+       # self.log_in()
+       # response = self.client.get('/edit_bookings/1')
+       # self.assertEqual(response.status_code, 302)
+       # self.assertRedirects(response, '/')
+
+    def test_add_booking(self):
+        """
+        This is use the booking that was
+        created in the setUp function to
+        test the CRUD functionality of the app
+        is working as it should
+        """
+        self.log_in()
+        response = self.client.post('/bookings', {Booking: Booking})
+        self.assertRedirects(response, '/')

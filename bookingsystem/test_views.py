@@ -17,7 +17,7 @@ class TestViews(TestCase):
         Set up test users and booking in
         order to test the CRUD functionality
         of the views"""
-       
+
         testing_user = User.objects.create_user(
             username='JohnSmith',
             first_name='John',
@@ -54,7 +54,6 @@ class TestViews(TestCase):
             username='JohnSmith',
             password='RandomWord1'
         )
-
 
     def test_home_view_get(self):
         """
@@ -150,7 +149,7 @@ class TestViews(TestCase):
 
     def test_add_booking(self):
         """
-        Testing the CRUD functionality 
+        Testing the CRUD functionality
         of the app is working as it should
         """
         self.log_in()
@@ -166,17 +165,26 @@ class TestViews(TestCase):
         of the app is working correctly
         """
         self.log_in()
-        booking = Booking.objects.create(
-            user='JohnSmith',
-            name='John Smith',
-            email_address='johnsmith@email.com',
-            phone='123654789',
-            number_of_people='2',
-            date='2022-10-20',
-            time='19:00',
-            table='Window',
-            occasion='none'
+        booking = Booking.objects.get(
+            name='John Smith'
         )
-        response = self.client.get(f'edit_bookings/{booking.id}')
+        response = self.client.get(f'/edit_bookings/{booking.id}')
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'edit_bookings.html')
+
+    def test_delete_booking(self):
+        """
+        This is use a booking that is
+        created within the test to
+        test the CRUD functionality
+        of the app is working correctly
+        """
+        self.log_in()
+        booking = Booking.objects.get(
+            name='John Smith'
+        )
+        response = self.client.get(f'/delete_booking/{booking.id}')
+        self.assertEqual(response.status_code, 302)
+        self.assertRedirects(response, '/')
+        existing_bookings = Booking.objects.filter(id=booking.id)
+        self.assertEqual(len(existing_bookings), 0)

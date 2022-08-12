@@ -51,8 +51,8 @@ class TestViews(TestCase):
         to access
         """
         self.client.login(
-            username= 'JohnSmith',
-            password= 'RandomWord1'
+            username='JohnSmith',
+            password='RandomWord1'
         )
 
 
@@ -148,25 +148,35 @@ class TestViews(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'edit_bookings.html', 'base.html')
 
-    #def test_edit_bookings_redirect(self):
-       # """
-       # This is to test that once a logged in
-       # user edits their booking, they are then
-       # redirected back to the home page.
-       # This is done using a response status code of 302
-       # """
-       # self.log_in()
-       # response = self.client.get('/edit_bookings/1')
-       # self.assertEqual(response.status_code, 302)
-       # self.assertRedirects(response, '/')
-
     def test_add_booking(self):
         """
-        This is use the booking that was
-        created in the setUp function to
-        test the CRUD functionality of the app
-        is working as it should
+        Testing the CRUD functionality 
+        of the app is working as it should
         """
         self.log_in()
-        response = self.client.post('/bookings', {Booking: Booking})
-        self.assertRedirects(response, '/')
+        response = self.client.post('/bookings/')
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, "bookings")
+
+    def test_edit_booking(self):
+        """
+        This is use a booking that is
+        created within the test to
+        test the CRUD functionality
+        of the app is working correctly
+        """
+        self.log_in()
+        booking = Booking.objects.create(
+            user='JohnSmith',
+            name='John Smith',
+            email_address='johnsmith@email.com',
+            phone='123654789',
+            number_of_people='2',
+            date='2022-10-20',
+            time='19:00',
+            table='Window',
+            occasion='none'
+        )
+        response = self.client.get(f'edit_bookings/{booking.id}')
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'edit_bookings.html')

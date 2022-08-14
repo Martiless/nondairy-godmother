@@ -32,9 +32,9 @@ This website has been created as the Fourth Milestone project for Code Institute
  1. [Deployment](#Deployment)
  1. [Credits](#Credits)
  1. [Acknowledgements](#Acknowledgements)
-***
-  
 
+***
+ 
 ## Site Goals:
 
 The goals for this site are as follows:
@@ -192,6 +192,8 @@ To make sure text could be seen without issue on my chosen colors I used [Coolor
 ![Color Checker 1](/static/images/colour_checker1.png)
 </details>
 
+&nbsp;
+
 <details>
 <summary>Color Checker 2</summary>
 
@@ -211,7 +213,7 @@ A lot of the imagery on this site was sourced from [Pexel](https://www.pexels.co
 
 ***
 [Back to top](#Non-dairy-Godmother)  
-  
+
 
 ## Features:
 There are several features on this site to help users get the most out of their visit to the site.  
@@ -320,6 +322,7 @@ Some future features I would like for this app are:
 * A shop - where users can buy vouchers, in-house wines, oils, dressings, etc
 
 ***
+
 [Back to top](#Non-dairy-Godmother)  
 
 ## User Stories Met:
@@ -419,8 +422,8 @@ Testing information can be viewed [here](/documents/TESTING.md)
 
 1. During the testing stage, it was discovered that both the Newsletter form and the Book a Table form had elements of it that were not showing up as being a required field. After a quick search, I found that I needed to provide each field with a handle that checks if the field is required. I also added labels for each of these required fields, along with placeholders.  
 
-
 ***
+
 [Back to top](#Non-dairy-Godmother) 
 
 ## Technologies Used:
@@ -466,6 +469,7 @@ For this project, the following technologies were used.
 * Google Dev Tools was used to edit code and check responsiveness before making the changes permanent.
 
 *** 
+
 [Back to top](#Non-dairy-Godmother)
 
 ## Validation:
@@ -484,16 +488,19 @@ For this project, the following technologies were used.
       - No errors were found when passed through [PEP8 Validator](http://pep8online.com/)
 
 ***
+
 [Back to top](#Non-dairy-Godmother)
 
 ## Accessibility:
 ![LightHouse Report](/static/images/lighthouse_report.png)
 
 ***
+
 ## Deployment:
 Deployment information can be found [here](/static/documents/DEPLOYMENT.md)
 
 ***
+
 ## Credits:
 * The initial setup of the Django project was done following the Code Institutes walkthrough project.  
 

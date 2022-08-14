@@ -4,7 +4,10 @@ This website is designed for a fictional vegan restaurant based in Cork, Ireland
 
 This website has been created as the Fourth Milestone project for Code Institute's Full Stack Software Development Diploma. It was built using a Full-Stack Toolkit. GitPod was used for writing the code for this website, as well as committing and pushing to GitHub. GitHub was then used to store the project after it had been pushed from GitPod. Once all the code had been written, Heroku was then used to deploy the website. 
 
+
 ### View the live website [here](https://non-dairy-godmother.herokuapp.com/)
+![Live Website](/static/images/main_area.png)
+
 ***
 ## Table of content: 
  1. [Site Goals](#Site-Goals)
@@ -169,10 +172,10 @@ The information above was then used to create a structure for the website. Below
 
 
 ## Skeleton:
-[Wireframes](/documents/WIREFRAMES.MD) were created to set out the initial appearance of the website while also making sure to keep the end-user in mind at all times. Wireframes were created using [Balsamiq](https://balsamiq.com/).  
+[Wireframes](/documents/WIREFRAMES.md) were created to set out the initial appearance of the website while also making sure to keep the end-user in mind at all times. Wireframes were created using [Balsamiq](https://balsamiq.com/).  
 
 ## Surface:
-[Please see the live site here]()  
+[Please see the live site here](https://non-dairy-godmother.herokuapp.com/)  
 
 ***
 [Back to top](#Non-dairy-Godmother)  
@@ -360,9 +363,7 @@ Testing information can be viewed [here](/documents/TESTING.md)
 ## Bugs:
 1. The styling of the base page was not consistent across all pages on the site.
       * I had not included "{% load static %}" at the beginning of my base.html page. Once this was edited, all pages loaded correctly. 
-1. Font Awesome icons not appearing on site.
-      * 
-1. The booking page was not loading, the following error message was coming up:
+1. The booking page was not loading, the below error message was coming up:
       * After reading through the yellow error page, it showed elements of the booking model didn't exist. I realised that I had changed elements of the model without making any migrations.
 <details>
 <summary>Booking Page Error</summary>
@@ -398,6 +399,23 @@ Testing information can be viewed [here](/documents/TESTING.md)
       * In my view, I had created a variable called my_bookings and then used this as the context in my view.
       * In the my_bookings.html page, I had created a for loop to iterate through the bookings of an authorised user and display them for editing or cancelling. However, in creating this for loop I had used the wrong variable. The context in my views.py file was "my_bookings" whereas in the loop I had used "for booking in bookings" Therefore there was a context/template mismatch. 
       * Once I removed the line of code in the view.py file which included the "my_bookings" variable as it was irrelevent and changed the context to bookings (as this was the query that was filtering the user's bookings) the bookings appear on the "My Bookings" page of the site. 
+
+1. CSS was not appearing when the site was deployed.
+      * When I delpoyed the site to Heroku, the site would be built but the CSS was not appearing.
+      * This was something that I could not figure out as I had changed DEBUG to False and removed DISABLE COLLECTSTATIC from the config var (as per the CI vidoes)
+      * I contacted the CI tutors who were able to walk me through what I needed to do: 
+            * Set the DISABLE COLLECTSTAIC again in Heroku
+            * Set the DEBUG back to True and commit the changes
+            * Delete all files from my Cloudinary account
+            * I then had to change the DEBUG back to FALSE before removing DISABLE COLLECTSTATIC from the config vars and commit and push the changes. 
+            * This then allowed Heroku to Collectstatic and added all the static files to Cloudinary
+      * All the CSS then worked perfectly on the site 
+
+1. PFD files not working on live site:
+      * This was because of the Cloudinary account I have. When I tried to add a PDF file through Cloudinary I got the following error message:  
+      ***Delivery of PDF assets is not currently permitted for this account.*** 
+      * My solution to this problem was to create a seperate folder within my Django app called "documents" which housed all the relevant documentations for this project including all PDF files neede for the website and md files. 
+
 
 1. During the testing stage, it was discovered that both the Newsletter form and the Book a Table form had elements of it that were not showing up as being a required field. After a quick search, I found that I needed to provide each field with a handle that checks if the field is required. I also added labels for each of these required fields, along with placeholders.  
 
@@ -469,10 +487,12 @@ For this project, the following technologies were used.
 [Back to top](#Non-dairy-Godmother)
 
 ## Accessibility:
-![LightHouse Report]()
+![LightHouse Report](/static/images/lighthouse_report.png)
+
 ***
 ## Deployment:
 Deployment information can be found [here](/static/documents/DEPLOYMENT.md)
+
 ***
 ## Credits:
 * The initial setup of the Django project was done following the Code Institutes walkthrough project.  
@@ -480,6 +500,8 @@ Deployment information can be found [here](/static/documents/DEPLOYMENT.md)
 
 ## Acknowledgements:
 * I would like to thank Brian O’Hare for being my mentor for this project.
+* I would like to thank Ed from student support who helped me to solve my issue with the CSS not loading on the live site.
+* I would like to thank the Slack community for all their support and encouragement during this and all my projects. 
 
 *** 
 [Back to top](#Non-dairy-Godmother) 

@@ -1,18 +1,25 @@
-## Manual Testing of Non-Dairy Godmother website: 
+## Testing of Non-Dairy Godmother website: 
 
 ## Table of content: 
- 1. [General](#General)
- 1. [Navbar and Footer Links](#navbar-and-footer-links)
- 1. [Menus Page](#menus-page)
- 1. [Newsletter](#newsletter)
- 1. [Register](#register)
- 1. [Login](#log-in)
- 1. [Book A Table](#book-a-table)
- 1. [My Bookings](#my-bookings)
- 1. [Edit Bookings](#edit-bookings)
- 1. [Thank You](#thank-you-page)
- 1. [User Feedback](#user-feedback)  
+ 1. [Manual Testing](#manual-test)
+    1. [General](#General)
+    1. [Navbar and Footer Links](#navbar-and-footer-links)
+    1. [Menus Page](#menus-page)
+    1. [Newsletter](#newsletter)
+    1. [Register](#register)
+    1. [Login](#log-in)
+    1. [Book A Table](#book-a-table)
+    1. [My Bookings](#my-bookings)
+    1. [Edit Bookings](#edit-bookings)
+    1. [Thank You](#thank-you-page)
+ 1. [Automated Testing](#automated-test)
+ 1. [User Feedback](#user-feedback)
+    1. [Home Page Image](#home-page-image)
+    1. [Spacing](#spacing-on-the-pages)
+    1. [Message Time Out](#time-out-of-message)
 
+
+## Manual Test:
 
 ### General:
 Using Google devtools I tested each page of the site to insure that it was responsive to different devices.
@@ -102,8 +109,14 @@ Checks for this page:
 
 ***
 
-### User Feedback:  
-#### Home page image:
+## Automated Test:
+Automated testing was done on the views.py file. This file was pick as it allowed testing of the views but also the CRUD functionality of the site.   
+To view the automated testing please go to [testing_views.py](/bookingsystem/test_views.py)
+
+***
+
+## User Feedback:  
+### Home page image:
 Original image on the home page did not give users the impression that they had landed on a restaurants website but more a cooking blog. After this feedback the homepage image was changed to make the site look like a restaurant website from the minute you land on it.  
 
 <details>
@@ -113,10 +126,10 @@ Original image on the home page did not give users the impression that they had 
 </details><br>
 
 
-#### Spacing on the pages:
+### Spacing on the pages:
 There was originally a white gap between the navigation bar and the main image on each page. After receiving user feedback that this looked like it wasn't meant to be there, it was removed from each page. The navigation bar and the main image now sit perfectly next to each other on each page. The white space still appears but only when a message is popping up.
 
-#### Time out of message:
+### Time out of message:
 When a user does just about anything on the site a message will appear to confirm their action. The time out on this was origianlly 2.5seconds. After receiving user feedback it was noted that these messages dissapear too quickly and were hard to read. The time out was increased to 4seconds to combat this. 
 
 [Back to Top of Testing](#manual-testing-of-non-dairy-godmother-website)     

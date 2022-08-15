@@ -413,6 +413,13 @@ Testing information can be viewed [here](/documents/TESTING.md)
             * I then had to change the DEBUG back to FALSE before removing DISABLE COLLECTSTATIC from the config vars and commit and push the changes. 
             * This then allowed Heroku to Collectstatic and added all the static files to Cloudinary
       * All the CSS then worked perfectly on the site 
+1. Server 500 error coming up when trying to register a user.
+      * When trying to register a new user to the site and an email address was provided a server 500 error was coming up
+      * After chatting with the tutors at CI it was discovered that if an email was provided the site send a verification email with a link, but as I don't have emails set up it was causing an issue.
+      * To ensure email wasn't required to verify a login the following code was put into the settings.py file:
+            * ***ACCOUNT_AUTHENTICATION_METHOD = 'username'***
+            * ***ACCOUNT_EMAIL_VERIFICATION = 'none'*** 
+      * Setting the ACCOUNT_EMAIL_VERIFICATION to none means that the user does not need to click on a link to confirm login. 
 
 1. PFD files not working on live site:
       * This was because of the Cloudinary account I have. When I tried to add a PDF file through Cloudinary I got the following error message:  
@@ -507,8 +514,8 @@ Deployment information can be found [here](/static/documents/DEPLOYMENT.md)
 
 ## Acknowledgements:
 * I would like to thank Brian O’Hare for being my mentor for this project.
-* I would like to thank Ed from tutor support who helped me to solve my issue with the CSS not loading on the live site.
-* I would like to thank Ger from tutor support who helped me reset my models when I was having an issue with them.
+* I would like to thank Ed from tutor support.
+* I would like to thank Ger from tutor support.
 * I would like to thank the Slack community for all their support and encouragement during this and all my projects. 
 
 *** 

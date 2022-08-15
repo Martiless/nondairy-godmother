@@ -57,6 +57,10 @@ INSTALLED_APPS = [
 
 SITE_ID = 1
 
+ACCOUNT_AUTHENTICATION_METHOD = 'username'
+ACCOUNT_EMAIL_VERIFICATION = 'optional'
+
+
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 
@@ -102,7 +106,7 @@ WSGI_APPLICATION = 'nondairygodmother.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-# If statement to check if you are testing code. 
+# If statement to check if you are testing code.
 # If code is being tested then Django will use the first database
 # Otherwise the Database defined in env.py will be used
 

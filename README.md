@@ -507,7 +507,8 @@ Deployment information can be found [here](/static/documents/DEPLOYMENT.md)
 
 ## Acknowledgements:
 * I would like to thank Brian O’Hare for being my mentor for this project.
-* I would like to thank Ed from student support who helped me to solve my issue with the CSS not loading on the live site.
+* I would like to thank Ed from tutor support who helped me to solve my issue with the CSS not loading on the live site.
+* I would like to thank Ger from tutor support who helped me reset my models when I was having an issue with them.
 * I would like to thank the Slack community for all their support and encouragement during this and all my projects. 
 
 *** 

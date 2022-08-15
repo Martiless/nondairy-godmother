@@ -49,4 +49,9 @@
 
 ***
 
+### Test Views:
+![Test Views Validation](/static/images/test_views_validator.png)
+
+***
+
 Back to [README](/README.md)

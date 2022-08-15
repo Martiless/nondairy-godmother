@@ -112,6 +112,8 @@ Checks for this page:
 ## Automated Test:
 Automated testing was done on the views.py file. This file was pick as it allowed testing of the views but also the CRUD functionality of the site.   
 To view the automated testing please go to [testing_views.py](/bookingsystem/test_views.py)
+For testing the view I created 10 automated tests. One to test each view and then to test the CRUD functionality. Each test passed when I ran the command in the terminal   
+![Testing](/static/images/testing_validation.png)
 
 ***
 

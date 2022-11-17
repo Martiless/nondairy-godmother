@@ -46,6 +46,7 @@ class BookingView(FormView):
             booking = form.save(commit=False)
             booking.user = request.user
             booking.save()
+        print(form)
 
         return render(request, 'thank_you.html')
 

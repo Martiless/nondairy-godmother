@@ -36,6 +36,11 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['non-dairy-godmother.herokuapp.com', 'localhost']
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-martiless-nondairygodmo-lbsfvc8iaa4.ws-eu75.gitpod.io',
+    'https://non-dairy-godmother.herokuapp.com'
+]
+
 
 # Application definition
 

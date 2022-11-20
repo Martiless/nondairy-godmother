@@ -75,7 +75,7 @@ class Booking(models.Model):
         )
     name = models.CharField(max_length=60, null=True, blank=True)
     email_address = models.EmailField(null=True, blank=True)
-    phone = models.IntegerField(null=True, blank=True)
+    phone = models.CharField(max_length=20, null=False, blank=False, default='')
     number_of_people = models.CharField(max_length=2,
                                         choices=NUMBER_OF_PEOPLE_CHOICE,
                                         blank=False, help_text='<br>Parties of'
@@ -91,7 +91,7 @@ class Booking(models.Model):
     occasion = models.CharField(
         max_length=100, choices=OCCASION_CHOICE, blank=False
         )
-
+    
     def __str__(self):
         return self.name
 

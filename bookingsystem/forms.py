@@ -1,4 +1,5 @@
 from django.forms import ModelForm
+from django.core import validators
 from django import forms
 from .models import Booking, SignUp
 
@@ -30,6 +31,7 @@ class OnlineForm(ModelForm):
     email_address = forms.EmailField(
         label='Email Address',
         required=True,
+        validators=[validators.EmailValidator(message="Invalid Email")],
         widget=forms.TextInput(attrs={'placeholder': 'Email Address'}),
     )
 

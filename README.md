@@ -67,7 +67,7 @@ Each story was then moved from 'To Do' to 'In Progress' to  'Done' as the projec
 <details>
 <summary>Progression Three</summary>
 
-![Progression Three](/static/images/progess_three.png)
+![Progression Three](/static/images/progress_three.png)
 </details>
 
 <details>
@@ -306,7 +306,7 @@ On the booking form, the user also has the option to pick where in the restauran
 <details>
 <summary>Occasion Picker:</summary>
 
-![Menus](/static/images/occasion_picked.jpg)
+![Menus](/static/images/occasion_picker.jpg)
 </details>
 The user also has the option to provide the restaurant with a reason for making the booking, be it a birthday, night out with friends or no particular reason at all. This can be done by clicking on the dropdown menu and picking which occasion best suits the booking.    
 
@@ -371,7 +371,7 @@ Testing information can be viewed [here](/documents/TESTING.md)
 <details>
 <summary>Booking Page Error</summary>
 
-![Booking Page Error](https://res.cloudinary.com/martiless/image/upload/v1658244450/static/documents/errors/booking_page_error.d567b7944073.png)
+![Booking Page Error](/static/images/booking_page_error.png)
 </details>
 
 1. Bookings appeared to be completed on the site but nothing was happening in the backend. 
@@ -384,7 +384,7 @@ Testing information can be viewed [here](/documents/TESTING.md)
 <details>
 <summary>ID Error</summary>
 
-![ID Error](https://res.cloudinary.com/martiless/image/upload/v1658244451/static/documents/errors/id_error.060a7133eaae.png)
+![ID Error](/static/images/id_error.png)
 </details>
 
 1. After correcting the above ID error it caused another ProgrammingError when I logged into the Django admin page and clicked on the bookings tab.
@@ -395,7 +395,7 @@ Testing information can be viewed [here](/documents/TESTING.md)
 <details>
 <summary>Admin Page Error</summary>
 
-![Admin Page Error](https://res.cloudinary.com/martiless/image/upload/v1658244452/static/documents/errors/admin_page_error.7fa4a367176c.png)
+![Admin Page Error](/static/images/admin_page_error.png)
 </details>
 
 1. Bookings were not showing up on the "My Bookings" page.

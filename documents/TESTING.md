@@ -124,7 +124,7 @@ Original image on the home page did not give users the impression that they had 
 <details>
 <summary>Here is the original Home page image</summary>
 
-![Original Home Page Image](https://res.cloudinary.com/martiless/image/upload/v1658244483/static/images/bowl_of_fruit.f931d0309a9e.jpg)
+![Original Home Page Image](/static/images/bowl_of_fruit.jpg)
 </details><br>
 
 

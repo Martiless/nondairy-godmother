@@ -3,7 +3,6 @@ from django.views import generic
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.views.generic.edit import FormView
-from django.contrib.auth.models import User
 from .forms import OnlineForm, SignUpForm
 from .models import Booking
 
@@ -49,9 +48,14 @@ class BookingView(FormView):
             booking = form.save(commit=False)
             booking.user = request.user
             booking.save()
-        print(form)
+            return render(request, 'thank_you.html')
+        else:
+            messages.error(request, 'Booking not completed, please check your booking information')
 
-        return render(request, 'thank_you.html')
+        return render(request, 'bookings.html',{
+                'form': form
+                }
+                )    
 
 
 class ThankYou(generic.DetailView):
@@ -120,9 +124,8 @@ def edit_booking_view(request, booking_id):
     """
 
     if request.user.is_authenticated:
-        user = Booking.objects.filter(user=request.user).first()
         booking = get_object_or_404(Booking, id=booking_id)
-        if user == booking:
+        if booking.user == request.user:
             if request.method == 'POST':
                 form = OnlineForm(data=request.POST, instance=booking)
                 if form.is_valid():
@@ -152,9 +155,8 @@ def delete_booking(request, booking_id):
     pop up a confimation message will appear.
     """
     if request.user.is_authenticated:
-        user = Booking.objects.filter(user=request.user).first()
         booking = get_object_or_404(Booking, id=booking_id)
-        if user == booking:
+        if booking.user == request.user:
             booking.delete()
             # Pops up a message to the user when a bookings is cancelled
             messages.success(request, 'Your booking has been cancelled')

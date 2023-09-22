@@ -504,7 +504,7 @@ For this project, the following technologies were used.
 ***
 
 ## Deployment:
-Deployment information can be found [here](/static/documents/DEPLOYMENT.md)
+Deployment information can be found [here](/documents/DEPLOYMENT.md)
 
 ***
 
